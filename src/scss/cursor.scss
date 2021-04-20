@@ -1,0 +1,85 @@
+
+////////// Cursor
+
+.cursor {
+	visibility: visible;
+	&__circle {
+		position: fixed;
+		top: -15px;
+		left: -15px;
+		width: 30px;
+		height: 30px;
+		pointer-events: none;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		box-sizing: border-box;
+		z-index: 10000;
+	}
+}
+
+@keyframes rotating {
+    0% {
+        -webkit-transform: translate(-7px, -7px) rotate(0deg);
+        transform:  translate(-7px, -7px) rotate(0deg);
+    }
+
+    95% {
+        -webkit-transform:  translate(-7px, -7px) rotate(350deg);
+        transform:  translate(-7px, -7px) rotate(350deg);
+    }
+
+    100% {
+        -webkit-transform:  translate(-7px, -7px) rotate(360deg);
+        transform:  translate(-7px, -7px) rotate(360deg);
+    }
+}
+@-moz-keyframes rotating {
+    0% {
+        -webkit-transform: translate(-7px, -7px) rotate(0deg);
+        transform:  translate(-7px, -7px) rotate(0deg);
+    }
+
+    95% {
+        -webkit-transform:  translate(-7px, -7px) rotate(350deg);
+        transform:  translate(-7px, -7px) rotate(350deg);
+    }
+
+    100% {
+        -webkit-transform:  translate(-7px, -7px) rotate(360deg);
+        transform:  translate(-7px, -7px) rotate(360deg);
+    }
+}
+@-webkit-keyframes rotating {
+    0% {
+        -webkit-transform: translate(-7px, -7px) rotate(0deg);
+        transform:  translate(-7px, -7px) rotate(0deg);
+    }
+
+    95% {
+        -webkit-transform:  translate(-7px, -7px) rotate(350deg);
+        transform:  translate(-7px, -7px) rotate(350deg);
+    }
+
+    100% {
+        -webkit-transform:  translate(-7px, -7px) rotate(360deg);
+        transform:  translate(-7px, -7px) rotate(360deg);
+    }
+}
+@-o-keyframes rotating {
+    0% {
+        -webkit-transform: translate(-7px, -7px) rotate(0deg);
+        transform:  translate(-7px, -7px) rotate(0deg);
+    }
+
+    95% {
+        -webkit-transform:  translate(-7px, -7px) rotate(350deg);
+        transform:  translate(-7px, -7px) rotate(350deg);
+    }
+
+    100% {
+        -webkit-transform:  translate(-7px, -7px) rotate(360deg);
+        transform:  translate(-7px, -7px) rotate(360deg);
+    }
+}
+
+    
