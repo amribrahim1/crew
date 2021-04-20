@@ -3,6 +3,7 @@ import $ from 'jquery';
 // import './App.css';
 import './App.scss';
 
+import Loading from './components/loading';
 import Sections from './components/sections'
 import Header from './components/header';
 import Cursor from "./components/cursor";
@@ -23,15 +24,19 @@ class App extends Component {
 	}
 
 	render() {
-		console.log(this.state)
-		return (
-			<>
-			<Header />
-			<Sections />
-			
-			<Cursor />
-			</>
-		)
+		// console.log(this.state)
+		
+			return (
+				<>
+				<Loading />
+				<Header />
+				<Sections />
+				
+				<Cursor />
+				</>
+			)
+		
+		
 	}
 }
 

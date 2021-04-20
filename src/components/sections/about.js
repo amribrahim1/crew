@@ -41,7 +41,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                {this.state[1] ? <Carousel.Item className="carousel-about-item">
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/06wf.jpeg" alt="ENTERTAINMENT SHOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content2">
@@ -50,8 +50,8 @@ class About extends Component {
                             <span className="abut-content2span2">MEDIA PRODUCTION</span> 
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[2] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/09wf.jpeg" alt="CREATE INSPIRATION" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content3"  >
@@ -71,8 +71,8 @@ class About extends Component {
                                 and exterior large scale projection services</p>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[3] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/01wf.jpeg" alt="EVENT MANAGEMENT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content4"   >
@@ -82,8 +82,8 @@ class About extends Component {
                             </div>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[4] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/06wf.jpeg" alt="CREATVE & CONCEPT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content5"  >
@@ -94,8 +94,8 @@ class About extends Component {
                             </div>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[5] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/04wf.jpeg" alt="IMAGINATION" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content6"  >
@@ -114,8 +114,8 @@ class About extends Component {
                                 </p>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[6] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/11wf.jpeg" alt="PRODUCTION SERVICES" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content7" >
@@ -139,8 +139,8 @@ class About extends Component {
                             </p>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[7] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/13wf.jpeg" alt="LET THE WORLD KNOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content8">
@@ -156,8 +156,8 @@ class About extends Component {
                             </p>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[8] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/14wf.jpeg" alt="MOTION GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content9"  >
@@ -173,8 +173,8 @@ class About extends Component {
                             </p>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
-                {this.state[9] ? <Carousel.Item className="carousel-about-item">
+                </Carousel.Item>
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/15wf.jpeg" alt="INFO GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content10" >
@@ -190,7 +190,7 @@ class About extends Component {
                             </p>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item> : <Carousel.Item className="carousel-about-item"></Carousel.Item>}
+                </Carousel.Item>
             </Carousel>
         )
     }

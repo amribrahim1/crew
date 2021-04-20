@@ -71,7 +71,7 @@ class Portfolio extends Component {
     }
     
     render() {
-        console.log(this.state);
+        // console.log(this.state);
         
         return (
             <div id="content-scroll">
@@ -114,7 +114,7 @@ class Portfolio extends Component {
                                     prevEl: '.swiper-button-prev',
                                 }}
                             >
-                                {this.state[0] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project1.png"
@@ -124,8 +124,8 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[1] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project2.png"
@@ -135,8 +135,8 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[2] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <div className="img-mask">
                                         <ReactPlayer url='parallax/Videos/GOTI SAAB.mp4' playing muted loop className="myVideo" style={{width: "100%", height: "auto"}} />
                                     </div>
@@ -145,18 +145,17 @@ class Portfolio extends Component {
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[3] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
-                                        className=""
-                                        src="./parallax/img/project4.png"
+                        src="./parallax/img/project4.png"
                                         alt=""
                                     />
                                     <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[4] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project5.png"
@@ -166,8 +165,8 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[5] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project6.png"
@@ -177,8 +176,8 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[6] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project7.png"
@@ -188,8 +187,8 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[7] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project8.png"
@@ -199,8 +198,8 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
-                                {this.state[8] === true ? <SwiperSlide className="" style={{height: "13px"}}>
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project9.png"
@@ -210,7 +209,7 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
+                                </SwiperSlide>
                             </Swiper>
                             <div className="swiper-pagination"></div>
                         </div>
