@@ -144,7 +144,7 @@ class Portfolio extends Component {
                                         <div className="section-image" style={{}}></div>
                                     </div>
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide> : <SwiperSlide className="" style={{height: "13px"}}></SwiperSlide>}
+                                </SwiperSlide>
                                 <SwiperSlide className="" style={{height: "13px"}}>
                                     <img
                         src="./parallax/img/project4.png"
