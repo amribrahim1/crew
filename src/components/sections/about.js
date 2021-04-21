@@ -140,7 +140,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval="700000" className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/13wf.jpeg" alt="LET THE WORLD KNOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content8">

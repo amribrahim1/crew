@@ -386,3 +386,10 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    .navbar-standard #menu > li > a {
+        padding: 10px 15px;
+    }
+}

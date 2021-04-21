@@ -17,6 +17,9 @@
             -moz-animation: zoomIn 2s; /* Firefox */
             -webkit-animation: zoomIn 2s; /* Safari and Chrome */
             -o-animation: zoomIn 2s; /* Opera */
+            &:hover .title {
+                margin-left: 50px;
+            }
             .title {
                 transition: 1s;
                 .title-white, .title-yellow {
@@ -62,7 +65,7 @@
                     min-width: 0px;
                     max-height: none;
                     max-width: none;
-                    
+
                 }
             }
             .description {
@@ -72,7 +75,7 @@
                 font-family: "Open Sans", sans-serif;
                 text-transform: none;
                 font-size: 18px;
-                
+
                 visibility: inherit;
                 transition: none 0s ease 0s;
                 text-align: left;
@@ -89,92 +92,204 @@
                 transform-origin: 50% 50% 0px;
             }
         }
-    }
-    .active {
-        // .carousel-home-caption {
-        //     transform: scale(1);
-        //     transition: 2s;
-        // }
+        @media only screen and (max-width: 750px) {
+            .carousel-home-caption {
+                width: 88%;
+                // max-width: 98%;
+                top: 15% !important;
+                left: 3% !important;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                padding: 5px;
+                margin-top: 30px !important;
+                .title {
+                    .title-white, .title-yellow {
+
+                    }
+                    .title-white {
+                        font-size: 40px;
+                    }
+                    .title-yellow {
+                        font-size: 50px;
+                    }
+                }
+                .description {
+                    text-align: justify;
+                    max-width: 100%;
+                }
+            }
+        }
     }
     .carousel-story {
         .story-caption {
             top: 20%;
             left: 100px;
-            &:hover .title {
-                margin-left: 50px;
+        }
+        @media only screen and (max-width: 750px) {
+            .story-caption { 
+                // top: 10% !important;   
+                .title-white, .title-yellow {
+                    margin-bottom: 10px !important;
+                }
+                .title-white {
+                    margin-top: 15px !important;
+                }
+                .title-yellow {
+                    // font-size: 40px !important;
+                    margin: 25px auto !important;
+                }
+                .description {
+                    // font-size: 13px;
+                }
             }
         }
     }
-    .carousel-light {  
+    .carousel-light {
         .light-caption {
-            top: 20% !important;
-            right: 100px !important;
+            top: 20%;
+            right: 100px;
             left: auto;
             bottom: auto;
-            &:hover .title {
-                margin-left: 50px;
+        }
+        @media only screen and (max-width: 750px) {
+            .light-caption { 
+                top: 10% !important;   
+                .title-white, .title-yellow {
+                    margin-bottom: 10px !important;
+                }
+                .title-white {
+                    font-size: 30px !important;
+                    margin: 20px auto !important;
+                }
+                .title-yellow {
+                    font-size: 40px !important;
+                    margin-top: 15px !important;
+                }
+                .description {
+                    font-size: 13px;
+                }
             }
         }
-
     }
-    .carousel-family {  
+
+    .carousel-family {
         .family-caption {
-            top: 25% !important;
-            right: 100px !important;
+            top: 25%;
+            right: 100px;
             left: auto;
             bottom: auto;
-            &:hover .title {
-                margin-left: 50px;
+        }
+        @media only screen and (max-width: 750px) {
+            .family-caption { 
+                top: 12% !important;   
+                .title-white, .title-yellow {
+                    margin-bottom: 10px !important;
+                }
+                .title-white {
+                    font-size: 30px !important;
+                }
+                .title-yellow {
+                    font-size: 40px !important;
+                    margin-top: 15px !important;
+                }
+                .description {
+                    font-size: 14px;
+                }
             }
         }
 
     }
-    .carousel-services {  
+    .carousel-services {
         .services-caption {
-            top: 25% !important;
-            right: 200px !important;
+            top: 25%;
+            right: 200px;
             left: auto;
             bottom: auto;
-            &:hover .title {
-                margin-left: 50px;
+        }
+        @media only screen and (max-width: 750px) {
+            .services-caption {  
+                .title-white, .title-yellow {
+                    margin-bottom: 10px !important;
+                }
+                .title-white {
+                    font-size: 27px !important;
+                }
+                .title-yellow {
+                    font-size: 30px !important;
+                    margin-top: 15px !important;
+                }
+                .description {
+                    font-size: 15px;
+                }
             }
         }
-
     }
-    .carousel-communication {  
+    .carousel-communication {
         .communication-caption {
-            top: 25% !important;
-            left: 100px !important;
+            top: 25%;
+            left: 100px;
             right: auto;
             bottom: auto;
-            &:hover .title {
-                margin-left: 50px;
+            @media only screen and (max-width: 750px) {
+                .title-white, .title-yellow {
+                    margin-bottom: 10px !important;
+                }
+                .title-yellow {
+                    font-size: 9vw !important;
+                    margin-top: 15px !important;
+                }
             }
         }
 
     }
-    .carousel-logo {  
+    .carousel-logo {
         .logo-caption {
-            top: 25% !important;
-            right: 100px !important;
+            top: 25%;
+            right: 150px;
             left: auto;
             bottom: auto;
-            &:hover .title {
-                margin-left: 50px;
+        }
+        @media only screen and (max-width: 750px) {
+            .logo-caption {  
+                top: 12% !important; 
+                .title-white, .title-yellow {
+                    margin: 10px auto !important;
+                }
+                .title-white {
+                    font-size: 27px !important;
+                }
+                .title-yellow {
+                    font-size: 30px !important;
+                    margin-top: 15px !important;
+                }
+                .description {
+                    font-size: 15px;
+                }
             }
         }
 
     }
-    .carousel-future {  
+    .carousel-future {
         .future-caption {
-            top: 25% !important;
-            right: 200px !important;
+            top: 25%;
+            right: 200px;
             left: auto;
             bottom: auto;
-            &:hover .title {
-                margin-left: 50px;
+        }
+        @media only screen and (max-width: 750px) {
+            .future-caption {  
+                top: 12% !important; 
+                .title-white, .title-yellow {
+                    margin-bottom: 20px !important;
+                }
+                .title-white {
+                    font-size: 27px !important;
+                }
+                .title-yellow {
+                    // font-size: 30px !important;
+                    margin-top: 30px !important;
+                }
             }
-            
         }
     }
 }
@@ -241,5 +356,5 @@
 }
 .carousel-control-next {
     top: auto;
-    bottom: auto;
+    bottom: 8%;
 }

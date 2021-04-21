@@ -14,11 +14,21 @@
                 height: auto;
                 display: inline-block;
             }
-            .abut-content3 {
-                width: 35%;
-                top: 38%;
-                right: 10%;
-            }
         }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .abut-content3 {
+        width: 35%;
+        top: 38%;
+        right: 10%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .abut-content3, .abut-content6, .abut-content7, .abut-content8, .abut-content9, .abut-content10 {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        border-radius: 8px;
     }
 }

@@ -107,12 +107,18 @@ ul {list-style-type: none;}
 	background-color: #000;
 }
 
+@media screen and (max-width: 767px) {
+	#fp-nav {
+		display: none;
+	}
+}
+
 @import "./scss/loading.css";
 @import "./scss/header.css";
 @import "./scss/fullpageNav.css";
 @import "./scss/sections/home.scss";
 @import "./scss/sections/services.scss";
-@import "./scss/sections/design.scss";
+@import "./scss/sections/portfolio.scss";
 @import "./scss/sections/about.scss";
 
 @import "./scss/cursor.scss";

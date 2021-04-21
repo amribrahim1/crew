@@ -30,7 +30,7 @@ class Header extends Component {
                         </ul>
 
                         {/* Side Menu Button */}
-                        <div className="side-nav-btn animated-wrap" id="sidemenu_toggle" onClick={this.openSideMenu}>
+                        <div className="side-nav-btn animated-wrap" onClick={this.openSideMenu}>
                             <div className="animated-element animated-elementH" style={{width: "20px"}} >
                                 <span></span>
                                 <span></span>
@@ -43,24 +43,24 @@ class Header extends Component {
                 {/* side menu */}
                 <div className={this.state.show ? "side-menu side-menu-active" : "side-menu"}>
                     <div className="inner-wrapper">
-                        <span className="btn-close" id="btn_sideNavClose" onClick={this.closeSideMenu}><i></i><i></i></span>
+                        <span className="btn-close" onClick={this.closeSideMenu}><i></i><i></i></span>
                         <nav className="side-nav">
                             <ul className="navbar-nav" id="side-menu">
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#home">Home</a>
+                                    <a className="nav-link link" href="#home" onClick={this.closeSideMenu}>Home</a>
                                 </li>
                             
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#services">Services</a>
+                                    <a className="nav-link link" href="#services" onClick={this.closeSideMenu}>Services</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#portfolio">Portfolio</a>
+                                    <a className="nav-link link" href="#portfolio" onClick={this.closeSideMenu}>Portfolio</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#about">About</a>
+                                    <a className="nav-link link" href="#about" onClick={this.closeSideMenu}>About</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#contact">Contact</a>
+                                    <a className="nav-link link" href="#contact" onClick={this.closeSideMenu}>Contact</a>
                                 </li>
                             </ul>
                         </nav>

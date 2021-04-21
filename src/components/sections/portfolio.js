@@ -81,6 +81,11 @@ class Portfolio extends Component {
                             <div id="overlay"></div>
                             <Swiper
                                 dottedOverlay= 'twoxtwo'
+                                autoHeight= {true}
+                                spaceBetween= {0}
+                                updateOnWindowResize= {true}
+                                parallax= {true}
+                                lazy= {true}
                                 dots= "swiper-thumbnails"
                                 slidesPerView={1}
                                 onSlideChange={(swiper) => this.changeIndex(swiper.activeIndex)}
@@ -114,100 +119,82 @@ class Portfolio extends Component {
                                     prevEl: '.swiper-button-prev',
                                 }}
                             >
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project1.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project2.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <div className="img-mask">
                                         <ReactPlayer url='parallax/Videos/GOTI SAAB.mp4' playing muted loop className="myVideo" style={{width: "100%", height: "auto"}} />
                                     </div>
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
-                        src="./parallax/img/project4.png"
+                                        src="./parallax/img/project4.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project5.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project6.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project7.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project8.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "13px"}}>
+                                <SwiperSlide className="" style={{height: "120px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project9.png"
                                         alt=""
                                     />
-                                    <div className="img-mask" style={{transition: "all 0ms ease 0s"}}>
-                                        <div className="section-image" style={{}}></div>
-                                    </div>
+                                    
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
                             </Swiper>

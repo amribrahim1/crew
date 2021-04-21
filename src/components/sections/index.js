@@ -45,7 +45,7 @@ class Sections extends Component {
         return (
             // <Contact />
             <ReactFullpage
-                scrollOverflow={true}
+                // scrollOverflow={true}
                 anchors= {["home", "services", "portfolio", "about", "contact"]}
                 navigation
                 scrollingSpeed= {1000}
@@ -55,6 +55,7 @@ class Sections extends Component {
                 id="page-scroll"
                 style={{width: "100%", height: "635px !important"}}
                 fadingEffect
+                dragAndMove="false"
                 render={({ state, fullpageApi }) => {
                     // console.log(state)
                     if (state.initialized === undefined || (state.initialized && state.initialized===false)) {
@@ -82,7 +83,7 @@ class Sections extends Component {
                                             ? <Services /> : ""
                                 }
                             </div>
-                            <div className="section section3">
+                            <div className="section section3 fp-auto-height-responsive">
                                 {state.destination && 
                                     state.destination.index === 2
                                         ? <Portfolio />
