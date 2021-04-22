@@ -34,10 +34,10 @@ class Portfolio extends Component {
         7: false,
         8: false,
         titles: [
-            "GLAMOUR QUEEN",
-            "ATHLETE CLASS",
-            "GOTI SAAB",
-            "LADY IN WHITE",
+            "Mobily",
+            "Jeddah PC Marine",
+            "Pride of Jamhour",
+            "eSPL FIFA19",
             "CREATIVE FUTURE",
             "ANTIQUE CHOICE",
             "KALASHAKALA",
@@ -45,16 +45,27 @@ class Portfolio extends Component {
             "FOREST HOUSE"
         ],
         subtitles: [
-            "Photography",
-            "Photography",
             "Video",
-            "Design",
+            "Video",
+            "Video",
+            "Video",
             "Design",
             "Photography",
             "Design",
             "Photography",
             "Architecture"
-        ]
+        ],
+        muted: {
+            0: true,
+            1: true,
+            2: true,
+            3: true,
+            4: true,
+            5: true,
+            6: true,
+            7: true,
+            8: true,
+        }
     }
     
     handleSwiper = swiper => {
@@ -69,6 +80,12 @@ class Portfolio extends Component {
         this.setState({state})
         this.state.swiper.slideTo(index)
     }
+
+    toggleMute = (index) => {
+        let muted = this.state.muted;
+        muted[index] = !muted[index]
+        this.setState({muted})
+    }
     
     render() {
         // console.log(this.state);
@@ -80,7 +97,7 @@ class Portfolio extends Component {
                         <div id="showcase-tilt">
                             <div id="overlay"></div>
                             <Swiper
-                                dottedOverlay= 'twoxtwo'
+                                dottedoverlay= 'twoxtwo'
                                 autoHeight= {true}
                                 spaceBetween= {0}
                                 updateOnWindowResize= {true}
@@ -119,40 +136,35 @@ class Portfolio extends Component {
                                     prevEl: '.swiper-button-prev',
                                 }}
                             >
-                                <SwiperSlide className="" style={{height: "120px"}}>
-                                    <img
-                                        className=""
-                                        src="./parallax/img/project1.png"
-                                        alt=""
-                                    />
-                                    
-                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
-                                    <img
-                                        className=""
-                                        src="./parallax/img/project2.png"
-                                        alt=""
-                                    />
-                                    
-                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
                                     <div className="img-mask">
-                                        <ReactPlayer url='parallax/Videos/GOTI SAAB.mp4' playing muted loop className="myVideo" style={{width: "100%", height: "auto"}} />
+                                        {/* <iframe src="https://www.youtube.com/embed/cHy7gBcn-iE?autoplay=1&mute=1&loop=1&controls=0&disablekb=1&playlist=cHy7gBcn-iE" controls="0" width="100%" height="100%"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"></iframe> */}
+                                        {/* <iframe title="vimeo-player" allow="autoplay; fullscreen" src="https://player.vimeo.com/video/539354793?background=1&autoplay=1&muted=1&loop=1&controls=0&autopause=0" width="100%" height="100%" frameBorder="0" allowFullScreen></iframe> */}
+                                        <ReactPlayer url='https://www.youtube.com/embed/cHy7gBcn-iE?autoplay=1&loop=1&controls=0&disablekb=1&playlist=cHy7gBcn-iE' width="100%" height="100%" playing muted={this.state.muted[0]} loop className="myVideo" />
+                                        <button onClick={() => this.toggleMute(0)}>MUTE</button>
+                                    </div>
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <iframe src="https://www.youtube.com/embed/ZNlTJEZS_mQ?autoplay=1&mute=1&loop=1&controls=0&disablekb=1&playlist=ZNlTJEZS_mQ" controls="0" width="100%" height="100%"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"></iframe>
+                                    </div>
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <iframe src="https://www.youtube.com/embed/CleTILrSv1U?autoplay=1&mute=1&loop=1&controls=0&disablekb=1&playlist=CleTILrSv1U" controls="0" width="100%" height="100%"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"></iframe>
+                                    </div>
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <iframe src="https://www.youtube.com/embed/MhG6d4eiRfQ?autoplay=1&mute=1&loop=1&controls=0&disablekb=1&playlist=MhG6d4eiRfQ" controls="0" width="100%" height="100%"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"></iframe>
                                     </div>
                                     
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
-                                    <img
-                                        src="./parallax/img/project4.png"
-                                        alt=""
-                                    />
-                                    
-                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
-                                </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project5.png"
@@ -161,7 +173,7 @@ class Portfolio extends Component {
                                     
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project6.png"
@@ -170,7 +182,7 @@ class Portfolio extends Component {
                                     
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project7.png"
@@ -179,7 +191,7 @@ class Portfolio extends Component {
                                     
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
+                                <SwiperSlide className="" style={{maxHeight: "100vh"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project8.png"
@@ -188,7 +200,7 @@ class Portfolio extends Component {
                                     
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>
-                                <SwiperSlide className="" style={{height: "120px"}}>
+                                <SwiperSlide className="" style={{height: "100px"}}>
                                     <img
                                         className=""
                                         src="./parallax/img/project9.png"

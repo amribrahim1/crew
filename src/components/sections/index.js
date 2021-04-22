@@ -22,12 +22,12 @@ class Sections extends Component {
 
     onLeave(origin, destination, direction) {
         // console.log("Leaving section " + origin.index);
-        setTimeout(() => {
-            this.setState({
-                ...this.state,
-                [origin.index]: true
-            })
-        }, 1000)
+        // setTimeout(() => {
+        //     this.setState({
+        //         ...this.state,
+        //         [origin.index]: true
+        //     })
+        // }, 1000)
     }
     
     afterLoad(origin, destination, direction) {
@@ -55,7 +55,7 @@ class Sections extends Component {
                 id="page-scroll"
                 style={{width: "100%", height: "635px !important"}}
                 fadingEffect
-                dragAndMove="false"
+                // dragAndMove="false"
                 render={({ state, fullpageApi }) => {
                     // console.log(state)
                     if (state.initialized === undefined || (state.initialized && state.initialized===false)) {

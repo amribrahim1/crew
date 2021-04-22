@@ -3,6 +3,7 @@
 
 .cursor {
 	visibility: visible;
+    z-index: 10000;
 	&__circle {
 		position: fixed;
 		top: -15px;
@@ -13,7 +14,6 @@
 		border-radius: 50%;
 		border: 1px solid #fff;
 		box-sizing: border-box;
-		z-index: 10000;
 	}
 }
 
