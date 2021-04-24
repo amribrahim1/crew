@@ -97,8 +97,11 @@ class Portfolio extends Component {
         // state[0] = false; state[1] = false; state[2] = false; state[3] = false; state[4] = false; state[5] = false; state[6] = false; state[7] = false; state[8] = false; state[9] = false; state[10] = false; state[11] = false; state[12] = false;
         state[index] = true;
         this.setState({state});
-        // state[this.state.swiper.previousIndex] = false;
-        setTimeout(this.setpreviousFalse(this.state.swiper.previousIndex), 1000);
+        state[this.state.swiper.previousIndex] = false;
+        setTimeout(
+            () => this.setpreviousFalse(this.state.swiper.previousIndex), 
+            1000
+        );
     }
     setpreviousFalse = index => {
         let state = this.state;
