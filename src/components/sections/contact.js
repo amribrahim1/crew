@@ -15,7 +15,7 @@ class Contact extends Component {
                         you. It will also be a great honor to have you visit
                         us at our office, which is located in Al-Olaya
                         distracted, Riyadh.<br/>
-                        You can also find us on <a href="http://www.crewsa.net" style={{fontWeight: 800, color: "#fff"}}>www.crewsa.net</a>&nbsp;
+                        You can also find us on <a href="http://www.crewsa.net" style={{fontWeight: 800}}>www.crewsa.net</a>&nbsp;
                         As well as the following Social Media channels.
                     </p>
                     <div>

@@ -379,7 +379,7 @@ ul {list-style-type: none;}
 #testimonial-quote .owl-item.active .team-img{
     transform: scale(1);
 }
-.testimonial-quote  ,h2  ,p {color: #FFFFFF;}
+/* .testimonial-quote  ,h2  ,p {color: #FFFFFF;} */
 
 .testimonial-wrapp,
 .testimonial-wrapp .testimonial-text,
@@ -691,8 +691,9 @@ ul {list-style-type: none;}
 .abut-content10Span1{color: #ffff00; font-size: 4vw;}
 .abut-content10 p{font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.3vw; font-weight: 300; }
 .contactDIV{position: absolute; top:27%; left: 7%; width: 35%; color: #000000; font-size:3vw; line-height: .8; font-weight:800;  font-style: italic; font-family: 'Open Sans', sans-serif;}
+.contactDIV a { color: #000; }
 .contactSpan{font-size: 6vw;}
-.contactDIV p{width: 80%; font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.2vw; font-weight: 400;}
+.contactDIV p{width: 80%; font-family: 'Open Sans', sans-serif;line-height: 1.5;   font-size:1.2vw; font-weight: 400;}
 @media screen and (max-width:1199px) and (max-height :411px) {
     .myVideo{width: 310%;position: relative;right: 0;}
     .abut-content1{position: absolute; top:27%; width:50%; font-size: 6vw; }
@@ -736,7 +737,8 @@ ul {list-style-type: none;}
     .contactDIV{top:20%; left: 10%; width: 80%; font-size: 7vw; color: #fff; background: rgb(0, 0, 0, 0.5); padding: 10px; border-radius: 10px; line-height: unset;}
     .contactSpan{font-size: 10vw;}
     .contactDIV p{font-size:4vw;} 
-    .AAAA{display: none;}   
+    .AAAA{display: none;} 
+    .contactDIV a { color: #fff; }  
 }
 .section-image {
     position: relative;
