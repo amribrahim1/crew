@@ -760,6 +760,11 @@ ul {list-style-type: none;}
     font-size: 3.5vw;
     line-height: 90px;
 }
+@media only screen and (min-width: 992px) {
+    .title {
+        width: 60%;
+    }
+}
 
 .swiper-pagination-bullet:first-child .title {
     opacity: 0;
@@ -1073,7 +1078,7 @@ ul {list-style-type: none;}
 =====================================*/
 .swiper-thumbnails {
     position: absolute;
-    left: 29%;
+    left: 22%;
     bottom: 10%;
     transform: translateX(50%);
 }
