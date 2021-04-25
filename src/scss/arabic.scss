@@ -1,0 +1,80 @@
+.arabic {
+    .navbar-standard #menu > li > a {
+        font-size: 1.2rem;
+    }
+    .home-carousel .carousel-home-item .carousel-home-caption {
+        text-align: right;
+        direction: rtl;
+        .title {
+            width: auto;
+            margin-bottom: 30px;
+            .title-white {
+                font-weight: 400;
+                font-size: 55px;
+                text-align: right;
+            }
+            .title-yellow {
+                font-weight: 1000;
+                font-size: 70px;
+                text-align: right;
+            }
+        }
+        .description {
+            font-size: 20px;
+            text-align: right;
+            line-height: 32px;
+            padding: 12px;
+        }
+        
+        // &:hover .title {}
+    }
+    .carousel-story {
+        .description {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+    @media only screen and (max-width: 750px) {
+        .light-caption, .story-caption { 
+            .title-white, .title-yellow {
+                margin-bottom: 15px !important;
+            }
+            .title-white {
+                font-size: 40px !important;
+                margin: 20px auto !important;
+            }
+            .title-yellow {
+                font-size: 50px !important;
+                margin-top: 20px !important;
+            }
+        }
+        .light-caption {
+            .description {
+                font-size: 16px !important;
+            }
+        }
+        .family-caption, .services-caption {
+            .title-white {
+                font-size: 60px !important;
+                margin: 20px auto !important;
+            }
+            .title-yellow {
+                font-size: 70px !important;
+                margin-top: 20px !important;
+            }
+        }
+        .communication-caption {
+            .title-white {
+                font-size: 40px !important;
+                margin: 20px auto !important;
+            }
+            .title-yellow {
+                font-size: 50px !important;
+                margin-top: 30px !important;
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+    // .carousel-home-caption:hover .title {
+    //     margin-left: 40%;
+    // }
+}

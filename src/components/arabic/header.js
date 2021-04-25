@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
-import '../../node_modules/flag-icon-css/css/flag-icon.css';
+import '../../../node_modules/flag-icon-css/css/flag-icon.css';
  
-class Header extends Component {
+class ArHeader extends Component {
 	state = {
         show: false,    // Side Menu Toggle
         option: { value: 'english', label: <span className="language d-inline-block"><i className="flag-icon flag-icon-us"></i> English</span> }
@@ -11,20 +11,13 @@ class Header extends Component {
     openSideMenu = () => this.setState({show: true})
     closeSideMenu = () => this.setState({show: false})
 
-    selectLanguage = e => {
-        console.log(e)
-        this.setState({
-            option: e
-        })
-    }
-
     render() {
         const options = [
             { value: 'english', label: <span className="language d-inline-block"><i className="flag-icon flag-icon-us"></i> English</span> },
             { value: 'arabic', label: <span className="language d-inline-block"><i className="flag-icon flag-icon-sa"></i> العربية</span> },
         ];
         return (
-            <header>
+            <header style={{fontFamily: "'Markazi Text', serif"}}>
                 {/* Navigation */}
                 <nav className="navbar navbar-top-default navbar-expand-lg navbar-standard">
                     <div className="container">
@@ -34,12 +27,12 @@ class Header extends Component {
                         </a>
 
                         <ul id="menu" className="d-none d-lg-block alt-font" style={{backgroundColor:"rgba(0, 0, 0, 0.5)", padding: "12px", borderRadius: "15px" }}>
-                            <li ><a className="link leater-space" href="#home">Home</a></li>
+                            <li ><a className="link leater-space" href="#home">الرئيسية</a></li>
                             
-                            <li><a className="link leater-space" href="#services">Our Services</a></li>          
-                            <li><a className="link leater-space" href="#portfolio">Portfolio</a></li>
-                            <li><a className="link leater-space" href="#about">About</a></li>
-                            <li><a className="link leater-space" href="#contact">Contact</a></li>
+                            <li><a className="link leater-space" href="#services">خدماتنا</a></li>          
+                            <li><a className="link leater-space" href="#portfolio">أعمالنا</a></li>
+                            <li><a className="link leater-space" href="#about">من نحن</a></li>
+                            <li><a className="link leater-space" href="#contact">اتصل بنا</a></li>
                             <li style={{width: "130px", }}>
                                 <Select
                                     className="selectpicker"
@@ -86,20 +79,20 @@ class Header extends Component {
                         <nav className="side-nav">
                             <ul className="navbar-nav" id="side-menu">
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#home" onClick={this.closeSideMenu}>Home</a>
+                                    <a className="nav-link link" href="#home" onClick={this.closeSideMenu}>الرئيسية</a>
                                 </li>
                             
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#services" onClick={this.closeSideMenu}>Services</a>
+                                    <a className="nav-link link" href="#services" onClick={this.closeSideMenu}>خدماتنا</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#portfolio" onClick={this.closeSideMenu}>Portfolio</a>
+                                    <a className="nav-link link" href="#portfolio" onClick={this.closeSideMenu}>أعمالنا</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#about" onClick={this.closeSideMenu}>About</a>
+                                    <a className="nav-link link" href="#about" onClick={this.closeSideMenu}>من نحن</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link" href="#contact" onClick={this.closeSideMenu}>Contact</a>
+                                    <a className="nav-link link" href="#contact" onClick={this.closeSideMenu}>اتصل بنا</a>
                                 </li>
                             </ul>
                         </nav>
@@ -111,7 +104,7 @@ class Header extends Component {
                                 <li><a href="https://www.youtube.com/channel/UCc3qxfDgNMKnpv_KeiL6mdQ?view_as=subscriber" target="_blank" rel="noreferrer" className="linkdin_bg_hvr2"> <i className="fab fa-youtube" aria-hidden="true"></i></a> </li>
                                 <li><a href="https://www.instagram.com/crewsa2020/?hl=en" target="_blank" rel="noreferrer" className="instagram_bg_hvr2"> <i className="fab fa-instagram" aria-hidden="true"></i></a> </li>
                             </ul>
-                            <p className="whitecolor">All rights reserved &copy; 2020 <a className="web-link text-white" href="http://www.crewsa.net/" target="_blank" rel="noreferrer"> CREW </a></p>
+                            <p className="whitecolor">كل الحقوق محفوظة &copy; 2021 <a className="web-link text-white" href="http://www.crewsa.net/" target="_blank" rel="noreferrer"> CREW </a></p>
                         </div>
                     </div>
                 </div>
@@ -133,4 +126,4 @@ class Header extends Component {
     }
 }
 
-export default Header
+export default ArHeader

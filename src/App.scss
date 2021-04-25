@@ -58,11 +58,25 @@ body {
 .btn.btn-rounded.btn-large {padding: 9px 38px;}
 .btn.btn-rounded.btn-extra-large {padding: 12px 45px 13px;}
 
-
+@import url('https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff');
+@font-face {
+	font-family: Droid Arabic Kufi;
+	src: url("https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff");
+}
 body {
     overflow: hidden;
+	font-family: 'Droid Arabic Kufi', serif;
 }
-
+.arabic {
+	font-family: 'Droid Arabic Kufi', serif !important;
+	.fab {
+		font-family: 'Font Awesome 5 Brands' !important;
+		font-weight: 400;
+	}
+}
+.arabic * {
+	font-family: 'Droid Arabic Kufi', serif !important;
+}
 // .fp-right {
 // 	ul {
 // 		li {
@@ -81,6 +95,11 @@ body {
 // 		}
 // 	}
 // }
+
+.language {
+	color: #fff;
+	cursor: pointer;
+}
 
 #blog,body {overflow: auto;}
 .full-screen {height: 100vh;}
@@ -122,3 +141,5 @@ ul {list-style-type: none;}
 @import "./scss/sections/about.scss";
 
 @import "./scss/cursor.scss";
+
+@import "./scss/arabic.scss";
