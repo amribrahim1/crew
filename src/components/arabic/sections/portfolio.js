@@ -39,34 +39,34 @@ class Portfolio extends Component {
         12: false,
         13: false,
         titles: [
-            "Mobily",
-            "Jeddah PC Marine",
-            "Mobily",
+            "موبايلي",
+            "مشروع تطوير جدة",
+            "موبايلي",
             "Pride of Jamhour",
-            "eSPL FIFA19",
-            "eSPL",
-            "Graduate Development Program",
-            "Graduate Development Program",
-            "Biban Damam Teaser",
-            "Monsha'at",
-            "Saudi Standards, Metrology and Quality org",
-            "Bank Albilad",
-            "Biban Build Up",
+            "الدوري السعودي الالكتروني للمحترفين",
+            "الدوري السعودي الالكتروني للمحترفين",
+            "برنامج تطوير الخريجين",
+            "برنامج تطوير الخريجين",
+            "بيبان الشرقية",
+            "بيبان المدينة",
+            "الهيئة السعودية للمواصفات والمقاييس والجودة",
+            "بنك البلاد",
+            "بيبان المدينة",
         ],
         subtitles: [
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
-            "Video",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
+            "فيديو",
         ],
         muted: {
             0: true,
@@ -116,7 +116,7 @@ class Portfolio extends Component {
     }
     
     render() {
-        console.log(this.state);
+        // console.log(this.state);
         
         return (
             <div id="content-scroll">
@@ -496,22 +496,19 @@ class Portfolio extends Component {
                     </div>
                 </div>
                 <div className="swiper-thumbnails link">
-                    <button onClick={() => this.changeIndex(0)} className={this.state.index === 0 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb1.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(1)} className={this.state.index === 1 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb2.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(2)} className={this.state.index === 2 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb3.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(3)} className={this.state.index === 3 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb4.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(4)} className={this.state.index === 4 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb5.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(5)} className={this.state.index === 5 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb6.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(6)} className={this.state.index === 6 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb7.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(7)} className={this.state.index === 7 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb8.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(8)} className={this.state.index === 8 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb9.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(6)} className={this.state.index === 6 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb6.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(7)} className={this.state.index === 7 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb7.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(8)} className={this.state.index === 8 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb8.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(9)} className={this.state.index === 9 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb9.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(10)} className={this.state.index === 10 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb7.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(11)} className={this.state.index === 11 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb8.png" alt="img" /> </button>
-                    <button onClick={() => this.changeIndex(12)} className={this.state.index === 12 ? "bullet is-active" : "bullet"}><img src="parallax/img/portfolio-thumb9.png" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(0)} className={this.state.index === 0 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/11_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(1)} className={this.state.index === 1 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/15_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(2)} className={this.state.index === 2 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/12_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(3)} className={this.state.index === 3 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/08_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(4)} className={this.state.index === 4 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/20_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(5)} className={this.state.index === 5 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/21_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(6)} className={this.state.index === 6 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/07_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(7)} className={this.state.index === 7 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/06_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(8)} className={this.state.index === 8 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/24_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(9)} className={this.state.index === 9 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/10_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(10)} className={this.state.index === 10 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/05_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(11)} className={this.state.index === 11 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/26_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(12)} className={this.state.index === 12 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/25_cover.jpg" alt="img" /> </button>
                 </div>
             </div>
         );

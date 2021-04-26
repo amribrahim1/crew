@@ -21,90 +21,90 @@ class Services extends Component {
                                 animateIn={'fadeIn'}
                                 autoplay
                             >
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Branding and Themes</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We will utilize your event to show your brand in a creative concept</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">العلامات التجارية والسمات</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">سوف نستفيد من هذا الحدث الخاص بك لإظهار علامتك التجارية في شكل مبدع</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Creative and Concept</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft"> We can design a creative event concept that will seeks to play on the imagination of your target group</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الإبداع</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft"> يمكننا تصميم حدث بشكل مبدع يدور حول خيال المجموعة المستهدفة</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Printing</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We can handle all aspects of your event High quality and affordable printed</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الطباعة</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">يمكننا التعامل مع جميع جوانب الحدث الخاص بك بجودة عالية وطباعة ميسورة التكلفة</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Branded Gifts</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We specialize in Corporate Gifts that stand out from the crowd, with products and packaging that represents you and that you will be remembered by</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">هدايا العلامات التجارية</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">نحن متخصصون في هدايا الشركات التي تبرز من بين الحشود ، مع المنتجات والتعبئة والتغليف التي تمثلك والتي سوف تتذكرها</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Decoration</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We have transformed many venues into original works of art specially created for your event. Everything you need from executive furniture for event to beautiful banqueting tables and place settings for your event </p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الديكور</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">لقد قمنا بتحويل العديد من الأماكن إلى أعمال فنية أصلية تم إنشاؤها خصيصًا لمناسبتك. كل ما تحتاجه من الأثاث التنفيذي للمناسبات إلى طاولات المآدب الجميلة وإعدادات المكان لمناسبتك </p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Lighting</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">Your event location can be enhanced with spectacular lighting, audiovisual equipment and staging. Specializing in stage lighting, sound systems, laptop and tech rental. They will tailor your event audio visual requirements to every event no matter how big or small the event</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الإضاءة</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">يمكن تحسين موقع الحدث الخاص بك من خلال الإضاءة الرائعة والمعدات السمعية والبصرية والمسرح. متخصصون فى إضاءة المسرح وأنظمة الصوت والكمبيوتر المحمول وتأجير التكنولوجيا. سيقومون بتخصيص المتطلبات الصوتية المرئية للحدث الخاص بك لكل حدث مهما كان الحدث كبيرًا أو صغيرًا</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Screens</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">Our talents will design the right screen setup and dimension of your event, with professional led screens rental functions and scales</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الشاشات</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">ستعمل مواهبنا على تصميم وإعداد الشاشة المناسبة وأبعاد الحدث الخاص بك ، وتوظيف شاشات الـLED بحرفية</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Registration System</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">The registration process is realized in steps. The Registration module allows for easy and flexible configuration of the entire process</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">نظام التسجيل</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">يتم تحقيق عملية التسجيل في خطوات. تسمح وحدة التسجيل بالتكوين السهل والمرن للعملية بأكملها</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Media Coverage</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">Capture your event for you and your guests with preferred photography, videography and editing services guaranteed to focus on every detail. Be sure to expose you event on social media to share the highlights</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">التغطية الإعلامية</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">التقط الحدث الخاص بك لك ولضيوفك من خلال خدمات التصوير الفوتوغرافي والفيديو والتحرير المفضلة المضمونة للتركيز على كل التفاصيل. تأكد من عرض الحدث الخاص بك على وسائل التواصل الاجتماعي لمشاركة النقاط البارزة</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Streaming</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We are developing and executing live event solutions that enhance your event's audience experience </p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">البث المباشر</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">نحن نعمل على تطوير وتنفيذ حلول الأحداث المباشرة التي تعزز تجربة جمهور الحدث الخاص بك </p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Translation</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We offer online translation</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الترجمة</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">نقدم لك ترجمة على الإنترنت</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Catering</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We offer full-service of corporate catering package which includes event setup, choice of venue, plus venue styling</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">تقديم الدعم</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">نحن نقدم خدمة كاملة لحزمة دعم الشركات والتي تشمل إعداد الحدث واختيار المكان بالإضافة إلى تصميم المكان</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Entertainment Shows</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We offer over 50 acts to choose from, they provide all types of entertainment to jazz up your party and spice up your event</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">العروض الترفيهية</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft"> نقدم أكثر من 50 عملاً للاختيار من بينها ، نوفر جميع أنواع الترفيه لإضفاء الإثارة على حفلتك وإضفاء الإثارة على فعاليتك</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Venues</h1>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الأماكن</h1>
                                     <div  className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">We can design a creative event concept that will seeks to play on the imagination of your target group </p>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">يمكننا تصميم حدث إبداعي يسعى للتركيز على خيال المجموعة المستهدفة </p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Media Production</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">Make your event at our flagship venue Senate House spectacular with our interior or exterior large scale and 30 projection services</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الإنتاج الإعلامي</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">اجعل الحدث الخاص بك في مكانه الرئيسي مذهلاً من خلال خدماتنا الداخلية أو الخارجية واسعة النطاق و 30 خدمة عرض</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Hologram shows</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">Looking into the future, we are making our efforts to create a world-class high-end display product helping your business achieve market growth</p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">عروض الهولوجرام</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">بالنظر إلى المستقبل ، فإننا نبذل جهودنا لإنشاء منتج عرض عالي المستوى على مستوى عالمي يساعد عملك على تحقيق نمو في السوق</p>
                                 </div>
-                                <div className="services-item item text-center text-md-left">
-                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">Ushers</h1>
-                                    <div className="testimonial-line"></div>
-                                    <p data-aos="fade-left" className="mb-5 per-slide text-white wow fadeInLeft">Female and male ushers are here for you </p>
+                                <div className="services-item item text-center text-md-right">
+                                    <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">المرشدون</h1>
+                                    <div className="line-cont"><div className="testimonial-line"></div></div>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">المرشدين النساء والرجال هنا من أجلك </p>
                                 </div>
                             </OwlCarousel>
                         </div>

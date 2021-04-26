@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
-import '../../node_modules/flag-icon-css/css/flag-icon.css';
+import '../../../node_modules/flag-icon-css/css/flag-icon.css';
  
 class Header extends Component {
 	state = {
@@ -9,14 +9,7 @@ class Header extends Component {
     }
 
     openSideMenu = () => this.setState({show: true})
-    closeSideMenu = () => this.setState({show: false})
-
-    selectLanguage = e => {
-        console.log(e)
-        this.setState({
-            option: e
-        })
-    }
+    closeSideMenu = () => this.setState({show: false});
 
     render() {
         const options = [
@@ -43,7 +36,7 @@ class Header extends Component {
                             <li style={{width: "130px", }}>
                                 <Select
                                     className="selectpicker"
-                                    value={this.state.option}
+                                    value={this.props.language}
                                     options={options}
                                     isSearchable={false}
                                     defaultValue="english"
@@ -101,6 +94,27 @@ class Header extends Component {
                                 <li className="nav-item">
                                     <a className="nav-link link" href="#contact" onClick={this.closeSideMenu}>Contact</a>
                                 </li>
+                                <li className="nav-item" style={{width: "130px", }}>
+                                    <Select
+                                        className="selectpicker"
+                                        value={this.props.language}
+                                        options={options}
+                                        isSearchable={false}
+                                        defaultValue="english"
+                                        // menuIsOpen 
+                                        theme= {{ colors: "#fff" }}
+                                        styles={{menu: (provided, state) => ({
+                                                background: "rgba(0, 0, 0, 0.5)",
+                                                position: "absolute",
+                                                top: "45px",
+                                                width: "100%",
+                                                border: "1px solid black",
+                                                borderRadius: "5px"
+                                            })
+                                        }}
+                                        onChange={this.props.changeLanguage}
+                                    />
+                                </li>
                             </ul>
                         </nav>
 
@@ -111,7 +125,7 @@ class Header extends Component {
                                 <li><a href="https://www.youtube.com/channel/UCc3qxfDgNMKnpv_KeiL6mdQ?view_as=subscriber" target="_blank" rel="noreferrer" className="linkdin_bg_hvr2"> <i className="fab fa-youtube" aria-hidden="true"></i></a> </li>
                                 <li><a href="https://www.instagram.com/crewsa2020/?hl=en" target="_blank" rel="noreferrer" className="instagram_bg_hvr2"> <i className="fab fa-instagram" aria-hidden="true"></i></a> </li>
                             </ul>
-                            <p className="whitecolor">All rights reserved &copy; 2020 <a className="web-link text-white" href="http://www.crewsa.net/" target="_blank" rel="noreferrer"> CREW </a></p>
+                            <p className="whitecolor">All rights reserved &copy; 2021 <a className="web-link text-white" href="http://www.crewsa.net/" target="_blank" rel="noreferrer"> CREW </a></p>
                         </div>
                     </div>
                 </div>

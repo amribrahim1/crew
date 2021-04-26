@@ -36,7 +36,7 @@ class ArHeader extends Component {
                             <li style={{width: "130px", }}>
                                 <Select
                                     className="selectpicker"
-                                    value={this.state.option}
+                                    value={this.props.language}
                                     options={options}
                                     isSearchable={false}
                                     defaultValue="english"
@@ -93,6 +93,27 @@ class ArHeader extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link link" href="#contact" onClick={this.closeSideMenu}>اتصل بنا</a>
+                                </li>
+                                <li className="nav-item" style={{width: "130px", }}>
+                                    <Select
+                                        className="selectpicker"
+                                        value={this.props.language}
+                                        options={options}
+                                        isSearchable={false}
+                                        defaultValue="english"
+                                        // menuIsOpen 
+                                        theme= {{ colors: "#fff" }}
+                                        styles={{menu: (provided, state) => ({
+                                                background: "rgba(0, 0, 0, 0.5)",
+                                                position: "absolute",
+                                                top: "45px",
+                                                width: "100%",
+                                                border: "1px solid black",
+                                                borderRadius: "5px"
+                                            })
+                                        }}
+                                        onChange={this.props.changeLanguage}
+                                    />
                                 </li>
                             </ul>
                         </nav>

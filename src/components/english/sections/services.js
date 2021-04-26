@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import '../../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
-import '../../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
+import '../../../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+import '../../../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 
 class Services extends Component {
     render() {

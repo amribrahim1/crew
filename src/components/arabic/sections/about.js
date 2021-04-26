@@ -35,9 +35,9 @@ class About extends Component {
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content1">
                             <div>
-                                <span>ABOUT</span>  <span className="abut-content1Span">&nbsp;CREW&nbsp;&nbsp;</span >
+                                <span>عن</span>  <span className="abut-content1Span">&nbsp;CREW&nbsp;&nbsp;</span >
                             </div>
-                            <p><br/>From Riyadh, the heart and capital of the kingdom of Saudi Arabia, we established the crew for event & media production and logistic support. <br/> By our successful team and the trust of our customers who have supported us since our first step, we have</p>
+                            <p><br/>من الرياض ، قلب وعاصمة المملكة العربية السعودية ، أنشأنا طاقم إنتاج الأحداث والإعلام والدعم اللوجستي. <br/> من خلال فريقنا الناجح وثقة عملائنا الذين دعمونا منذ خطوتنا الأولى ، لدينا ...</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -45,9 +45,9 @@ class About extends Component {
                     <img className="d-block w-100 sliderIMG" src="parallax/img/06wf.jpeg" alt="ENTERTAINMENT SHOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content2">
-                            &nbsp; &nbsp;ENTERTAINMENT SHOW<br/>
-                            <span className="abut-content2span1">VENUES</span><br/> 
-                            <span className="abut-content2span2">MEDIA PRODUCTION</span> 
+                            العروض الترفيهية<br/><br/>
+                            <span className="abut-content2span1">VENUES</span><br/><br/>  
+                            <span className="abut-content2span2">الإنتاج الإعلامي</span> 
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -55,20 +55,19 @@ class About extends Component {
                     <img className="d-block w-100 sliderIMG" src="parallax/img/09wf.jpeg" alt="CREATE INSPIRATION" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content3"  >
-                            <div>CREATE <br/>
-                                <span style={{color: "#ffff00"}}>INSPIRATION</span> 
+                            <div>اصنع <br/>
+                                <span style={{color: "#ffff00"}}>الإلهام</span> 
                             </div>
                             <p>
-                                We offer over 50 acts to choose from, they
-                                provide all types of entertainment to jazz up
-                                your party and spice up your event.
-                                When it comes to venues and where you will
-                                host your event, our team will contact
-                                different venue providers to make sure we
-                                find the perfect place for your perfect event.<br/>
-                                Finally, Make your event at our flagship venue
-                                Senate House spectacular with our interior
-                                and exterior large scale projection services</p>
+                                نحن نقدم أكثر من 50 عملاً للاختيار من بينها
+                                 نقديم جميع أنواع الترفيه لإضفاء الإثارة على حدثك.
+                                 عندما يتعلق الأمر بالأماكن وأين شئت
+                                 استضف الحدث الخاص بك ، سيتواصل معك فريقنا
+                                 موفرو أماكن مختلفة للتأكد من أننا
+                                 عثرنا على المكان المثالي لحدثك المثالي. <br/>
+                                 أخيرًا ، اجعل مناسبتك في مقرنا الرئيسي
+                                 المذهل مع ديكوراتنا الداخلية
+                                 وخدمات الإسقاط الخارجية واسعة النطاق</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -77,8 +76,8 @@ class About extends Component {
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content4"   >
                             <div>
-                                <span className="abut-content4Span1">EVENT</span><br/> 
-                                <span className="abut-content4Span2">MANAGEMENT</span> 
+                                <span className="abut-content4Span2">إدارة</span><br/> 
+                                <span className="abut-content4Span1">المناسبات</span> 
                             </div>
                         </div>
                     </Carousel.Caption>
@@ -86,11 +85,11 @@ class About extends Component {
                 <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/06wf.jpeg" alt="CREATVE & CONCEPT" />
                     <Carousel.Caption className="carousel-about-caption">
-                        <div className=" abut-content5"  >
+                        <div className="abut-content5"  >
                             <div>
-                                CREATVE & CONCEPT<br/>
-                                <span className="abut-content5Span1">PRODUCTION</span><br/> 
-                                <span className="abut-content5Span2">BRANDING & THEMES</span> 
+                                الإبداع<br/>
+                                <span className="abut-content5Span1">الإنتاج</span><br/> 
+                                <span className="abut-content5Span2">العلامات التجارية</span> 
                             </div>
                         </div>
                     </Carousel.Caption>
@@ -100,18 +99,14 @@ class About extends Component {
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content6"  >
                             <div>
-                                <span className="abut-content6Span1">&nbsp;&nbsp;IMAGINATION</span><br/>
-                                <span className="abut-content6Span2">&nbsp;HAS NO</span> 
-                                <br/> LIMITS 
+                                <span className="abut-content6Span1">&nbsp;&nbsp;الخيال</span><br/>
+                                <span className="abut-content6Span2">&nbsp;ليس له</span> 
+                                <br/> حدود 
                             </div>
                             <p>
-                                We all come together to produce the perfect idea and
-                                concept that will best suit your event requirements.<br/>
-                                From there, our creative wizards communicate with
-                                our production team to to turn idea into reality,
-                                making sure that we utilize your event to present your
-                                brand within a creative theme.
-                                </p>
+                                نجتمع جميعًا لإنتاج الفكرة والمفهوم المثاليين اللذين يتناسبان مع متطلبات الحدث الخاص بك.
+                                من هناك ، يتواصل سحرتنا المبدعين مع فريق الإنتاج لدينا لتحويل الفكرة إلى حقيقة ، والتأكد من أننا نستخدم الحدث الخاص بك لتقديم علامتك التجارية
+                            </p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -119,40 +114,28 @@ class About extends Component {
                     <img className="d-block w-100 sliderIMG" src="parallax/img/11wf.jpeg" alt="PRODUCTION SERVICES" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content7" >
-                            <div>PRODUCTION <br/> 
-                                <span className="abut-content7Span1">SERVICES</span>
+                            <div>خدمات <br/> 
+                                <span className="abut-content7Span1">الإنتاج</span>
                             </div>
                             <p>
                                 <br/>
-                                In this phase it is key to keep planning ahead of the daily
-                                shoot. The primary aim is to stick to the budget and
-                                schedule, this requires constant vigilance.<br/><br/>
-                                More CREW will be recruited at this stage, such as the
-                                property master, script supervisor, assistant directors,
-                                stills photographer, picture editor, and sound editors.
-                                These are just the most common roles in filmmaking; the
-                                production office will be free to create any unique blend of
-                                roles to suit the various responsibilities possible during
-                                the production of a film. Communication is key between
-                                the location, set, office, production company, distributors
-                                and all other parties involved.
+                                في هذه المرحلة ، من المهم الاستمرار في التخطيط قبل التصوير اليومي. الهدف الأساسي هو الالتزام بالميزانية والجدول الزمني ، وهذا يتطلب يقظة مستمرة. <br/> <br/>
+
+                                سيتم تعيين المزيد من CREW في هذه المرحلة ، مثل مدير الملكية ومشرف البرنامج النصي والمخرجين المساعدين ومصور الصور الثابتة ومحرر الصور ومحرري الصوت.
+                                هذه فقط الأدوار الأكثر شيوعًا في صناعة الأفلام ؛ سيكون لمكتب الإنتاج الحرية في إنشاء أي مزيج فريد من الأدوار ليناسب المسؤوليات المختلفة الممكنة أثناء إنتاج الفيلم. الاتصال هو المفتاح بين الموقع والمجموعة والمكتب وشركة الإنتاج والموزعين وجميع الأطراف الأخرى المعنية.
                             </p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="700000" className="carousel-about-item">
+                <Carousel.Item className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/13wf.jpeg" alt="LET THE WORLD KNOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content8">
-                            <div >LET THE WORLD <br/> 
-                                <span className="abut-content8Span1">KNOW</span> 
+                            <div >دع العالم <br/> 
+                                <span className="abut-content8Span1">يعرف</span> 
                             </div>
                             <p>
-                                whether you want to further expose your
-                                products, or want to build up your brand from
-                                scratch, and anything in between, rest assure
-                                that CREW has a dedicated team of professionals
-                                who will take it to the next level.
+                                سواء كنت ترغب في عرض المزيد من منتجاتك ، أو ترغب في بناء علامتك التجارية من الصفر ، وأي شيء بينهما ، كن مطمئنًا أن CREW لديها فريق متخصص من المحترفين الذين سينتقلون بك إلى المستوى التالي.
                             </p>
                         </div>
                     </Carousel.Caption>
@@ -161,32 +144,26 @@ class About extends Component {
                     <img className="d-block w-100 sliderIMG" src="parallax/img/14wf.jpeg" alt="MOTION GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content9"  >
-                            <div>MOTION <br/> 
-                                <span className=" abut-content9Span1">GRAPHICS</span> 
+                            <div>الرسوم <br/> 
+                                <span className=" abut-content9Span1">المتحركة</span> 
                             </div>
                             <p>
                                 <br/>
-                                When it is time to set things in motion and tell
-                                your story throuh an animation, CREW has some
-                                really talented artist who will turn any message or
-                                story into an eye catching animation.
+                                عندما يحين وقت تحريك الأشياء ونشر قصتك من خلال الرسوم المتحركة ، يكون لدى CREW فنان موهوب حقًا سيحول أي رسالة أو قصة إلى شيء ملفتة للنظر
                             </p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval="700000" className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src="parallax/img/15wf.jpeg" alt="INFO GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content10" >
-                            <div>INFO <br/> 
-                                <span className="abut-content10Span1">GRAPHICS</span> 
+                            <div>الرسومات <br/> 
+                                <span className="abut-content10Span1">البيانية</span> 
                             </div>
                             <p>
                                 <br/>
-                                Data is extremely important for you and your
-                                clients, therefore we wanted to add a team of
-                                specialists to our CREW, to assure that all your
-                                requirements are covered in one place.
+                                البيانات مهمة للغاية بالنسبة لك ولعملائك ، لذلك أردنا إضافة فريق من المتخصصين إلى CREW لدينا ، لضمان تغطية جميع متطلباتك.
                             </p>
                         </div>
                     </Carousel.Caption>

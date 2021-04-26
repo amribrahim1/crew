@@ -66,7 +66,7 @@
 .btn.btn-large {font-size:15px; padding: 9px 34px; line-height: 25px}
 .btn.btn-extra-large {font-size:15px; padding: 12px 40px 13px;  line-height: 25px}
 .btn-dual .btn {margin: 0 10px; }
-.btn i {margin-left: 6px; vertical-align: middle; position: relative; top:-1px}
+/* .btn i {margin-left: 6px; vertical-align: middle; position: relative; top:-1px} */
 
 .btn.btn-black {background:#000000; border-color: #000000; color: #fff; font-size: 15px;}
 .btn.btn-black:hover, .btn.btn-black:focus {background: transparent; color: #000; font-size: 15px;}
@@ -300,7 +300,6 @@ ul {list-style-type: none;}
     width: 5px;
     opacity: 0;
     height: 3px;
-    left: 0%;
     position: relative;
     text-align: right;
     margin-bottom: 40px;
@@ -667,8 +666,8 @@ ul {list-style-type: none;}
 .abut-content2span1{letter-spacing: -5px; font-size: 15vw; color: #ffff00;}
 .abut-content2span2{letter-spacing: -1px;}
 .abut-content3{position: absolute; top:32%; right: 13%; width: 30%; font-size:5vw; line-height: 1; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif;}
-.abut-content3 p{font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.3vw; font-weight: 100;}
-.abut-content4{position: absolute; top:35%; right: 10%; width: 55%; font-size:5vw; line-height: 1; font-weight:800; color:#000000; font-style: italic; font-family: 'Open Sans', sans-serif;}
+.abut-content3 p{font-family: 'Open Sans', sans-serif;line-height: 1.3;   font-size:1.3vw; font-weight: 100;}
+.abut-content4{position: absolute; top:35%; right: 10%; width: 55%; font-size:5vw; text-align: center; line-height: 1; font-weight:800; color:#000000; font-style: italic; font-family: 'Open Sans', sans-serif;}
 .abut-content4Span1{letter-spacing: 2px; font-size: 11vw; color: #000000;}
 .abut-content4Span2{letter-spacing: 5px;}
 .abut-content5{position: absolute; top:35%; right: 10%; width: 70%; font-size:5vw;letter-spacing: 2px; line-height: .9; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif; text-align: center;}
@@ -677,7 +676,7 @@ ul {list-style-type: none;}
 .abut-content6{position: absolute; top:40%; right: 13%; width: 30%;font-size:5vw; line-height: .3; font-weight:800; color:#ffff00; font-style: italic; font-family: 'Open Sans', sans-serif;}
 .abut-content6Span1{font-size: 2vw;}
 .abut-content6Span2{color: #ffffff; font-size: 3vw; line-height: 1.6;}
-.abut-content6 p{font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.3vw; font-weight: 300; margin-top: 20px;}
+.abut-content6 p{font-family: 'Open Sans', sans-serif;line-height: 1.4;   font-size:1.3vw; font-weight: 300; margin-top: 20px;}
 .abut-content7{position: absolute; top:27%; left: 8%; width: 30%; font-size:3vw; letter-spacing: 1px ; line-height: 1; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif; }
 .abut-content7Span1{color: #ffff00; font-size:4.5vw;}
 .abut-content7 p{font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.3vw; font-weight: 300;}
@@ -690,7 +689,7 @@ ul {list-style-type: none;}
 .abut-content10{position: absolute; top:27%; left: 8%; width: 30%;font-size:5vw; line-height: .8; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif; }
 .abut-content10Span1{color: #ffff00; font-size: 4vw;}
 .abut-content10 p{font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.3vw; font-weight: 300; }
-.contactDIV{position: absolute; top:27%; left: 7%; width: 35%; color: #000000; font-size:3vw; line-height: .8; font-weight:800;  font-style: italic; font-family: 'Open Sans', sans-serif;}
+.contactDIV{position: absolute; top:27%; left: 7%; width: 35%; color: #000000; font-size:3vw; /*line-height: .8;*/ font-weight:800;  font-style: italic; font-family: 'Open Sans', sans-serif;}
 .contactDIV a { color: #000; }
 .contactSpan{font-size: 6vw;}
 .contactDIV p{width: 80%; font-family: 'Open Sans', sans-serif;line-height: 1.5;   font-size:1.2vw; font-weight: 400;}
@@ -712,7 +711,7 @@ ul {list-style-type: none;}
     .abut-content1Span{height: 26px; padding-top: 0; margin-left: -4px;}
     .abut-content2{width: 80%; top :35%;font-size:8vw; line-height: 1; letter-spacing: 0px; }
     .abut-content2span1{letter-spacing: -2px; font-size: 20vw;}
-    .abut-content3{top:20%; right: 10%; width: 80%; font-size: 12vw;}
+    .abut-content3{top:20% !important; right: 10%; width: 80%; font-size: 12vw;}
     .abut-content3 p{font-size: 5vw;}
     .abut-content4{top:40%; width: 80%; font-size: 9vw;}
     .abut-content4Span1{font-size: 20vw;}
@@ -731,7 +730,7 @@ ul {list-style-type: none;}
     .abut-content9{top:20%; right: 13%; width: 75%;font-size:10vw; }
     .abut-content9Span1{ font-size: 11vw;}
     .abut-content9 p{font-size:6vw; line-height: normal;}
-    .abut-content10{top:20%; left: 8%; width: 75%;font-size:15vw; }
+    .abut-content10{top:20%; left: 8% !important; width: 75%;font-size:15vw; }
     .abut-content10Span1{font-size: 14vw;}
     .abut-content10 p{font-size:6vw; line-height: normal;}
     .contactDIV{top:20%; left: 10%; width: 80%; font-size: 7vw; color: #fff; background: rgb(0, 0, 0, 0.5); padding: 10px; border-radius: 10px; line-height: unset;}
@@ -1080,7 +1079,7 @@ ul {list-style-type: none;}
 =====================================*/
 .swiper-thumbnails {
     position: absolute;
-    left: 22%;
+    left: 27%;
     bottom: 10%;
     transform: translateX(50%);
 }

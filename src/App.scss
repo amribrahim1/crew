@@ -31,7 +31,6 @@ body {
 .btn.btn-large {font-size:15px; padding: 9px 34px; line-height: 25px}
 .btn.btn-extra-large {font-size:15px; padding: 12px 40px 13px;  line-height: 25px}
 .btn-dual .btn {margin: 0 10px; }
-.btn i {margin-left: 6px; vertical-align: middle; position: relative; top:-1px}
 
 .btn.btn-black {background:#000000; border-color: #000000; color: #fff; font-size: 15px;}
 .btn.btn-black:hover, .btn.btn-black:focus {background: transparent; color: #000; font-size: 15px;}
@@ -73,6 +72,9 @@ body {
 		font-family: 'Font Awesome 5 Brands' !important;
 		font-weight: 400;
 	}
+	.fas {
+		font-family: 'Font Awesome 5 Free' !important;
+	}
 }
 .arabic * {
 	font-family: 'Droid Arabic Kufi', serif !important;
@@ -99,6 +101,7 @@ body {
 .language {
 	color: #fff;
 	cursor: pointer;
+	font-family: Droid Arabic Kufi;
 }
 
 #blog,body {overflow: auto;}

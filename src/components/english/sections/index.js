@@ -5,7 +5,7 @@ import Services from './services';
 import Portfolio from './portfolio';
 import About from './about';
 import Contact from './contact';
-import Loading from '../loading';
+import Loading from '../../loading';
 
 class Sections extends Component {
     state = {
