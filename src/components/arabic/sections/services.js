@@ -20,6 +20,7 @@ class Services extends Component {
                                 animateOut={'fadeOut'}
                                 animateIn={'fadeIn'}
                                 autoplay
+                                autoplayTimeout={9000}
                             >
                                 <div className="services-item item text-center text-md-right">
                                     <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">العلامات التجارية والسمات</h1>

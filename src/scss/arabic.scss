@@ -74,6 +74,11 @@
             }
         }
     }
+    @media only screen and (min-width: 993px) {
+        .light-caption, .family-caption {
+            right: 10% !important;
+        }
+    }
     // .carousel-home-caption:hover .title {
     //     margin-left: 40%;
     // }
@@ -120,15 +125,7 @@
             // letter-spacing: normal;
             top: 25%;
         }
-        @media screen and (max-width: 993px) {
-            .abut-content5 {
-                line-height: 2.2;
-                top: 35%;
-                .abut-content5Span1 {
-                    letter-spacing: normal;
-                }
-            }
-        }
+        
         .abut-content6 {
             text-align: right;
             direction: rtl;

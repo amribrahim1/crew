@@ -29,7 +29,7 @@ class Home extends Component {
                 pause={false}
                 slide
             >
-                <Carousel.Item interval="7000" className="carousel-home-item carousel-story">
+                <Carousel.Item interval="9000" className="carousel-home-item carousel-story">
                     <img src="parallax/img/18wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption story-caption">
                         <div className="title">
@@ -42,7 +42,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="7000" className="carousel-home-item carousel-light">
+                <Carousel.Item interval="9000" className="carousel-home-item carousel-light">
                     <img src="parallax/img/05wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption light-caption">
                         <div className="title">
@@ -64,7 +64,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="7000" className="carousel-home-item carousel-family">
+                <Carousel.Item interval="9000" className="carousel-home-item carousel-family">
                     <img src="parallax/img/02wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption family-caption">
                         <div className="title">
@@ -88,7 +88,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="7000" className="carousel-home-item carousel-services">
+                <Carousel.Item interval="9000" className="carousel-home-item carousel-services">
                     <img src="parallax/img/12wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption services-caption">
                         <div className="title">
@@ -109,7 +109,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="7000" className="carousel-home-item carousel-communication">
+                <Carousel.Item interval="9000" className="carousel-home-item carousel-communication">
                     <img src="parallax/img/07wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption communication-caption">
                         <div className="title">
@@ -130,7 +130,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="7000" className="carousel-home-item carousel-logo">
+                <Carousel.Item interval="9000" className="carousel-home-item carousel-logo">
                     <img src="parallax/img/03wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption logo-caption">
                         <div className="title">
@@ -155,7 +155,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="7000" className="carousel-home-item carousel-future">
+                <Carousel.Item interval="9000" className="carousel-home-item carousel-future">
                     <img src="parallax/img/08wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption future-caption">
                         <div className="title">

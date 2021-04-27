@@ -27,6 +27,7 @@ class App extends Component {
     }
 	
 	componentDidMount() {
+		console.log($("html.touch"))
 		setTimeout(() => {
 			$("#loader-fade").fadeOut("slow");
 		}, 1000);

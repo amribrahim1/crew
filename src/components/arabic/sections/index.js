@@ -21,6 +21,12 @@ class ArSections extends Component {
     }
 
     onLeave(origin, destination, direction) {
+        if (origin.index === 2) {
+            this.setState({
+                ...this.state,
+                [origin.index]: false
+            });
+        }
         // console.log("Leaving section " + origin.index);
         // setTimeout(() => {
         //     this.setState({
@@ -37,7 +43,7 @@ class ArSections extends Component {
         this.setState({
             ...this.state,
             [destination.index]: true
-        })
+        });
     }
 
     render() {

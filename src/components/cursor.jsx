@@ -2,6 +2,10 @@ import React from "react";
 import gsap from "gsap";
 
 class Cursor extends React.Component {
+    state = {
+        mouseIsOn: false
+    }
+
     constructor(props) {
         super(props);
 
@@ -42,6 +46,7 @@ class Cursor extends React.Component {
 
             // add listener to track the current mouse position
             document.addEventListener("mousemove", e => {
+                this.setState({mouseIsOn: true})
                 mousePos.x = e.clientX;
                 mousePos.y = e.clientY;
             });
@@ -58,15 +63,20 @@ class Cursor extends React.Component {
     }
 
     render() {
-        // console.log("Cursor render");
-
-        return (
-            <div>
-                <div className="cursor">
-                    <div className="cursor__circle" ref={this.follower} />
+        // console.log(this.state);
+        if (this.state.mouseIsOn) {
+            return (
+                <div>
+                    <div className="cursor">
+                        <div className="cursor__circle" ref={this.follower} />
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        } else {
+            return (
+                <div></div>
+            );
+        }
     }
 }
 

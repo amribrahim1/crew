@@ -26,7 +26,7 @@ class ArHeader extends Component {
                             <img src="parallax/img/logo.svg" className="logo-dark" alt="logo" />
                         </a>
 
-                        <ul id="menu" className="d-none d-lg-block alt-font" style={{backgroundColor:"rgba(0, 0, 0, 0.5)", padding: "12px", borderRadius: "15px" }}>
+                        <ul id="menu" className="d-none d-lg-block alt-font" style={{backgroundColor:"rgba(0, 0, 0, 0.5)", padding: "12px", borderRadius: "15px", whiteSpace: "nowrap" }}>
                             <li ><a className="link leater-space" href="#home">الرئيسية</a></li>
                             
                             <li><a className="link leater-space" href="#services">خدماتنا</a></li>          
@@ -54,10 +54,6 @@ class ArHeader extends Component {
                                     onChange={this.props.changeLanguage}
                                 />
                             </li>
-                            {/* <select className="selectpicker" data-width="fit">
-                                <option data-icon='<span className="flag-icon flag-icon-us"></span> English'>English</option>
-                                <option  data-content='<span className="flag-icon flag-icon-sa"></span> العربية'>arabic</option>
-                            </select> */}
 
                         </ul>
 

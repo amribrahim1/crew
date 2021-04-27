@@ -1079,7 +1079,7 @@ ul {list-style-type: none;}
 =====================================*/
 .swiper-thumbnails {
     position: absolute;
-    left: 27%;
+    left: 22.4%;
     bottom: 10%;
     transform: translateX(50%);
 }
@@ -1106,7 +1106,7 @@ ul {list-style-type: none;}
     width: 60px;
     outline: none;
     border: 5px solid rgba(255,255,255,.3);
-    margin-left: -30px;
+    margin-left: -25px;
     opacity: .65;
     -webkit-transform: scale(.95);
     -ms-transform: scale(.95);
@@ -1115,19 +1115,19 @@ ul {list-style-type: none;}
 }
 
 .swiper-thumbnails .bullet.is-active{
-    background: transparent;
+    /* background: transparent;
+    width: 60px; 
     height: 60px;
     margin: 0;
     position: relative;
-    width: 60px;
-    z-index: 99;
-    border: 5px solid rgba(255, 255, 255, 1);
     margin-left: -30px;
-    opacity: 1;
     -webkit-transform: scale(.95);
     -ms-transform: scale(.95);
     -o-transform: scale(.95);
-    transform: scale(.95);
+    transform: scale(.95); */
+    z-index: 99;
+    border: 5px solid rgba(255, 255, 255, 1);
+    opacity: 1;
 }
 
 
