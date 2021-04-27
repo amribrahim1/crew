@@ -2,9 +2,12 @@
 .swiper-slide {
     // background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
     text-align: center; 
+    .img-mask {
+        // transform: translate3d(100px,0, 0);
+    }
     
     img, video, .myVideo, iframe {
-        opacity: 0.5;
+        opacity: 0.7;
         position: relative;
         z-index: -5;
         width: 100%;

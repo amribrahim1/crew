@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import ReactPlayer from 'react-player';
+import $ from 'jquery';
+import {TweenMax, Power2} from "gsap";
 
 // // Import Swiper styles
 import '../../../../node_modules/swiper/swiper.scss';
@@ -88,6 +90,8 @@ class Portfolio extends Component {
     handleSwiper = swiper => {
         // console.log(swiper)
         this.setState({swiper})
+        TweenMax.to($(".subtitle"), 0.4, {force3D:true, opacity:1, y:0, delay:0.1, ease:Power2.easeOut});
+        TweenMax.to($(".title"), 0.4, {force3D:true, opacity:1, y:0, delay:0.15, ease:Power2.easeOut});
     }
 
     changeIndex = (index) => {
@@ -150,7 +154,6 @@ class Portfolio extends Component {
                                     renderBullet: (index, className) => {
                                         return `
                                             <div class="tab__link ${className}">
-                                                
                                                     <div class="counter">${index<9 ? "0" : ""}${index+1}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;13</div>
                                                 <div>
                                                     <div class="subtitle">${this.state.subtitles[index]}</div>
