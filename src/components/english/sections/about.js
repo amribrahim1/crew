@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 class About extends Component {
     state = {
         index: 0,
+        interval: 6000,
         0: false,
         1: false,
         2: false,
@@ -14,6 +15,57 @@ class About extends Component {
         7: false,
         8: false,
         9: false,
+        backgrounds: {
+            wide: [
+                "parallax/img/01wf.jpeg",
+                "parallax/img/06wf.jpeg",
+                "parallax/img/09wf.jpeg",
+                "parallax/img/01wf.jpeg",
+                "parallax/img/06wf.jpeg",
+                "parallax/img/04wf.jpeg",
+                "parallax/img/11wf.jpeg",
+                "parallax/img/13wf.jpeg",
+                "parallax/img/14wf.jpeg",
+                "parallax/img/15wf.jpeg",
+            ],
+            high: [
+                "parallax/img/01af.jpeg",
+                "parallax/img/06af.jpeg",
+                "parallax/img/09af.jpeg",
+                "parallax/img/01af.jpeg",
+                "parallax/img/06af.jpeg",
+                "parallax/img/04af.jpeg",
+                "parallax/img/11af.jpeg",
+                "parallax/img/13af.jpeg",
+                "parallax/img/14af.jpeg",
+                "parallax/img/15af.jpeg",
+            ]
+        }
+    }
+
+    componentDidUpdate(prevProps) {
+        // Typical usage (don't forget to compare props):
+        if (prevProps !== this.props) {
+            if (this.props.out === true) {
+                this.setState({
+                    interval: 99999999999
+                });
+            } else {
+                this.setState({
+                    interval: 6000
+                });
+            }
+        }
+    }
+
+    setImgSrc = index => {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        if (w>h) {
+            return this.state.backgrounds.wide[index]
+        } else {
+            return this.state.backgrounds.high[index]
+        }
     }
     
     handleOnSlide = e => {
@@ -29,9 +81,10 @@ class About extends Component {
                 onSlide = {(e) => this.handleOnSlide(e)}
                 pause="hover"
                 controls={false}
+                interval={this.state.interval}
             >
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG rev-slidebg" src="parallax/img/01wf.jpeg" alt="ABOUT" />
+                    <img className="d-block w-100 sliderIMG rev-slidebg" src={this.setImgSrc(0)} alt="ABOUT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content1">
                             <div>
@@ -42,7 +95,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/06wf.jpeg" alt="ENTERTAINMENT SHOW" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(1)} alt="ENTERTAINMENT SHOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content2">
                             &nbsp; &nbsp;ENTERTAINMENT SHOW<br/>
@@ -52,7 +105,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/09wf.jpeg" alt="CREATE INSPIRATION" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(2)} alt="CREATE INSPIRATION" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content3"  >
                             <div>CREATE <br/>
@@ -73,7 +126,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/01wf.jpeg" alt="EVENT MANAGEMENT" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(3)} alt="EVENT MANAGEMENT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content4"   >
                             <div>
@@ -84,7 +137,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/06wf.jpeg" alt="CREATVE & CONCEPT" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(4)} alt="CREATVE & CONCEPT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content5"  >
                             <div>
@@ -96,7 +149,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/04wf.jpeg" alt="IMAGINATION" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(5)} alt="IMAGINATION" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content6"  >
                             <div>
@@ -116,7 +169,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/11wf.jpeg" alt="PRODUCTION SERVICES" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(6)} alt="PRODUCTION SERVICES" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content7" >
                             <div>PRODUCTION <br/> 
@@ -141,7 +194,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval="700000" className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/13wf.jpeg" alt="LET THE WORLD KNOW" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(7)} alt="LET THE WORLD KNOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content8">
                             <div >LET THE WORLD <br/> 
@@ -158,7 +211,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/14wf.jpeg" alt="MOTION GRAPHICS" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(8)} alt="MOTION GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content9"  >
                             <div>MOTION <br/> 
@@ -175,7 +228,7 @@ class About extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carousel-about-item">
-                    <img className="d-block w-100 sliderIMG" src="parallax/img/15wf.jpeg" alt="INFO GRAPHICS" />
+                    <img className="d-block w-100 sliderIMG" src={this.setImgSrc(9)} alt="INFO GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content10" >
                             <div>INFO <br/> 

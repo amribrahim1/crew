@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 class Home extends Component {
 	state = {
         index: 0,
+        interval: 9000,
         0: false,
         1: false,
         2: false,
@@ -11,12 +12,60 @@ class Home extends Component {
         4: false,
         5: false,
         6: false,
+        backgrounds: {
+            wide: [
+                "parallax/img/18wf.jpeg",
+                "parallax/img/05wf.jpeg",
+                "parallax/img/02wf.jpeg",
+                "parallax/img/12wf.jpeg",
+                "parallax/img/07wf.jpeg",
+                "parallax/img/03wf.jpeg",
+                "parallax/img/08wf.jpeg",
+            ],
+            high: [
+                "parallax/img/18af.jpeg",
+                "parallax/img/05af.jpeg",
+                "parallax/img/02af.jpeg",
+                "parallax/img/12af.jpeg",
+                "parallax/img/07af.jpeg",
+                "parallax/img/03af.jpeg",
+                "parallax/img/08af.jpeg",
+            ]
+        }
+    }
+
+    componentDidUpdate(prevProps) {
+        // Typical usage (don't forget to compare props):
+        if (prevProps !== this.props) {
+            if (this.props.out === true) {
+                this.setState({
+                    interval: 99999999999
+                });
+            } else {
+                this.setState({
+                    interval: 9000
+                });
+            }
+        }
+    }
+
+    setImgSrc = index => {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        if (w>h) {
+            return this.state.backgrounds.wide[index]
+        } else {
+            return this.state.backgrounds.high[index]
+        }
     }
 
     handleOnSlide = e => {
         let state = this.state;
         state[e] = true;
-        this.setState({state})
+        this.setState({
+            index: e,
+            state
+        });
     }
     
     render() {
@@ -27,10 +76,10 @@ class Home extends Component {
                 fade
                 onSlide = {(e) => this.handleOnSlide(e)}
                 pause={false}
-                slide
+                interval={this.state.interval}
             >
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-story">
-                    <img src="parallax/img/18wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-story">
+                    <img src={this.setImgSrc(0)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption story-caption">
                         <div className="title">
                             <div className="title-white">SUCCESS</div>
@@ -42,8 +91,8 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-light">
-                    <img src="parallax/img/05wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-light">
+                    <img src={this.setImgSrc(1)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption light-caption">
                         <div className="title">
                             <div className="title-white">LET YOUR LIGHT</div>
@@ -64,8 +113,8 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-family">
-                    <img src="parallax/img/02wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-family">
+                    <img src={this.setImgSrc(2)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption family-caption">
                         <div className="title">
                             <div className="title-white">THE CREW</div>
@@ -88,8 +137,8 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-services">
-                    <img src="parallax/img/12wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-services">
+                    <img src={this.setImgSrc(3)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption services-caption">
                         <div className="title">
                             <div className="title-white">POST-PRODUCTION</div>
@@ -109,8 +158,8 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-communication">
-                    <img src="parallax/img/07wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-communication">
+                    <img src={this.setImgSrc(4)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption communication-caption">
                         <div className="title">
                             <div className="title-white">THE ART OF</div>
@@ -130,8 +179,8 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-logo">
-                    <img src="parallax/img/03wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-logo">
+                    <img src={this.setImgSrc(5)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption logo-caption">
                         <div className="title">
                             <div className="title-white">THE CREW</div>
@@ -155,8 +204,8 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-future">
-                    <img src="parallax/img/08wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-future">
+                    <img src={this.setImgSrc(6)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption future-caption">
                         <div className="title">
                             <div className="title-white">CREATE YOUR OWN</div>

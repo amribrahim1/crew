@@ -20,7 +20,7 @@
             }
         }
         .description {
-            font-size: 20px;
+            font-size: 16px;
             text-align: right;
             line-height: 32px;
             padding: 12px;
@@ -121,9 +121,12 @@
             line-height: 1.2;
         }
         .abut-content5 {
-            line-height: 1.5;
+            line-height: 1.7;
             // letter-spacing: normal;
-            top: 25%;
+            // top: 25%;
+            .abut-content5Span1 {
+                letter-spacing: normal;
+            }
         }
         
         .abut-content6 {

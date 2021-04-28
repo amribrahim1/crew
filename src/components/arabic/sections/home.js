@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 class ArHome extends Component {
 	state = {
         index: 0,
+        interval: 99999999999,
         0: false,
         1: false,
         2: false,
@@ -11,6 +12,51 @@ class ArHome extends Component {
         4: false,
         5: false,
         6: false,
+        backgrounds: {
+            wide: [
+                "parallax/img/18wf.jpeg",
+                "parallax/img/05wf.jpeg",
+                "parallax/img/02wf.jpeg",
+                "parallax/img/12wf.jpeg",
+                "parallax/img/07wf.jpeg",
+                "parallax/img/03wf.jpeg",
+                "parallax/img/08wf.jpeg",
+            ],
+            high: [
+                "parallax/img/18af.jpeg",
+                "parallax/img/05af.jpeg",
+                "parallax/img/02af.jpeg",
+                "parallax/img/12af.jpeg",
+                "parallax/img/07af.jpeg",
+                "parallax/img/03af.jpeg",
+                "parallax/img/08af.jpeg",
+            ]
+        }
+    }
+
+    componentDidUpdate(prevProps) {
+        // Typical usage (don't forget to compare props):
+        if (prevProps !== this.props) {
+            if (this.props.out === true) {
+                this.setState({
+                    interval: 99999999999
+                });
+            } else {
+                this.setState({
+                    interval: 99999999999
+                });
+            }
+        }
+    }
+
+    setImgSrc = index => {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        if (w>h) {
+            return this.state.backgrounds.wide[index]
+        } else {
+            return this.state.backgrounds.high[index]
+        }
     }
 
     handleOnSlide = e => {
@@ -27,43 +73,46 @@ class ArHome extends Component {
                 fade
                 onSlide = {(e) => this.handleOnSlide(e)}
                 pause={false}
-                slide
+                interval={this.state.interval}
             >
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-story">
-                    <img src="parallax/img/18wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
-                    <Carousel.Caption className="carousel-home-caption story-caption">
+                <Carousel.Item className="carousel-home-item carousel-story">
+                    <img src={this.setImgSrc(0)} alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                    <Carousel.Caption className="tp-caption tp-resizeme carousel-home-caption story-caption">
                         <div className="title">
                             <div className="title-white">قصة</div>
                             <div className="title-yellow">نجاح</div>
                         </div>
                         
                         <div className="description">
-                            من خلال الدعم والثقة التي وضعها عملاؤنا فينا <br/> وعلى أيدي فريقنا الموهوب والمتفاني <br/>، حققنا انتشارًا واسعًا للنجاح
+                            من خلال الدعم والثقة التي وضعها عملاؤنا فينا <br/>
+                            وعلى أيدي فريقنا الموهوب والمتفاني،<br/>
+                            حققنا انتشارًا واسعًا للنجاح
                             في غضون فترة زمنية قصيرة.<br/>
                             اليوم نحن من أسرع الشركات نموا
-                            في المجال<br/>وشغفنا<br/>
-                            للنجاح يدفعنا إلى تحقيق<br/>
+                            في المجال،
+                            <br/>وشغفنا للنجاح يدفعنا إلى تحقيق<br/>
                             أكثر وأكثر كل يوم.                        
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-light">
-                    <img src="parallax/img/05wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-light">
+                    <img src={this.setImgSrc(1)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption light-caption">
                         <div className="title">
-                            <div className="title-white">دع نروك</div>
-                            <div className="title-yellow">يلمع</div>
+                            <div className="title-white">دع نورك</div>
+                            <div className="title-yellow">يشع</div>
                         </div>
                         
                         <div className="description">
-                        لقد قمنا بتحويل العديد من الأماكن إلى أعمال فنية أصلية تم إنشاؤها خصيصًا لعملائنا. سيغطي فريقنا كل ما تحتاجه من الأثاث التنفيذي إلى طاولات المآدب الجميلة وإعدادات الأماكن لمناسبتك.
+                            لقد قمنا بتحويل العديد من الأماكن إلى أعمال فنية أصيلة تم إنشاؤها خصيصًا لعملائنا.<br/>
+                            سيغطي فريقنا كل ما تحتاجه من الأثاث التنفيذي إلى طاولات المآدب الجميلة وإعدادات المكان لمناسبتك.
                             <br/>
-                            سنقوم بإعداد الحدث الخاص بك بإضاءة مذهلة ومعدات سمعية وبصرية وعرض مسرحي. متخصص في إضاءة المسرح وأنظمة الصوت وبرامج الكمبيوتر وأحدث التقنيات ، سيكون شكل ومظهر الحدث الخاص بك مصممًا خصيصًا لك. سيقوم فريقنا بتصميم إعداد الشاشة والأبعاد المناسبة لحدثك ، مع وظائف ومقاييس تأجير شاشات LED الاحترافية
+                            سنقوم بإعداد الحدث الخاص بك بإضاءة ومعدات سمعية وبصرية وعرض مسرحي مذهل. متخصصون في إضاءة المسرح وأنظمة الصوت وبرامج الكمبيوتر سوف يستخدمون أحدث التقنيات للوصول بحدثك للعالمية ، سيكون شكل ومظهر الحدث الخاص بك مصممًا خصيصًا لك. سيقوم فريقنا بتصميم وإعداد الشاشات بالأبعاد المناسبة لحدثك ، كما نقوم بتأجير شاشات LED الاحترافية
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-family">
-                    <img src="parallax/img/02wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-family">
+                    <img src={this.setImgSrc(2)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption family-caption">
                         <div className="title">
                             <div className="title-white">عائلة</div>
@@ -73,19 +122,16 @@ class ArHome extends Component {
                         <div className="description">
                             في CREW ، نحن في الواقع عائلة أكثر من مجرد
                              زملاء. نختلف في الخبرة والجنسيات
-                             اللغات والألوان والتقاليد ، ولكن في الداخل و
-                             خارج المكتب ، أصبحنا جميعًا واحدًا ، وكلنا
-                             نتفق على النجاح.
+                             واللغات والألوان والتقاليد، ولكن في داخل و 
+                             خارج المكتب ، نحن جميعا نكون فريقا واحدا يتفق على النجاح.
                             <br/>
-                            الأكثر خبرة وتميزاً
-                             وموهبةً في مجال تنظيم الفعاليات ، البرامج
-                             إنتاج ، إعلان ، وثائقي ، الإخراج التليفزيوني وكتابة السيناريو والدعم اللوجستي ، هم
-                             من ضمن عائلتنا.
+                            تتميز عائلتنا بضمها لأفراد من ذوي الخبرة والتميز والموهبة  في مجالات تنظيم الفعاليات ، البرامج
+                             الإنتاجية ، الإعلان ، الوثائقيات ، الإخراج التليفزيوني وكتابة السيناريو والدعم اللوجستي.
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-services">
-                    <img src="parallax/img/12wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-services">
+                    <img src={this.setImgSrc(3)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption services-caption">
                         <div className="title">
                             <div className="title-white">خدمات</div>
@@ -93,19 +139,17 @@ class ArHome extends Component {
                         </div>
                         
                         <div className="description">
-                            في صناعة الأفلام وإنتاج الفيديو ومرحلة ما قبل الإنتاج
-                             يبدأ رسميًا بمجرد أن يصبح المشروع مضاءً باللون الأخضر. 
-                             في هذه المرحلة ، يتم الانتهاء من الاستعدادات للإنتاج<br/><br/>
+                            تبدأ خدمات الإنتاج سواء في صناعة الأفلام أو إنتاج الفيديو بمرحلة ما قبل الإنتاج.<br/><br/>
                             
-                             أثناء مرحلة ما قبل الإنتاج ، يتم تقسيم النص
-                                 في المشاهد الفردية مع القصص المصورة وجميع
-                                 المواقع ، والدعائم ، وأعضاء فريق التمثيل ، والأزياء ، والخاصة
-                                 يتم تحديد التأثيرات والتأثيرات البصرية.
+                             وأثناء مرحلة ما قبل الإنتاج ، يتم تقسيم النص
+                            في المشاهد الفردية مع القصص المصورة وجميع
+                            المواقع ، والدعائم ، وأعضاء فريق التمثيل ، والأزياء ، والخاصة،
+                            كما يتم تحديد المؤثرات الخاصة والمؤثرات البصرية.
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-communication">
-                    <img src="parallax/img/07wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-communication">
+                    <img src={this.setImgSrc(4)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption communication-caption">
                         <div className="title">
                             <div className="title-white">فن</div>
@@ -113,19 +157,12 @@ class ArHome extends Component {
                         </div>
                         
                         <div className="description">
-                            في صناعة الأفلام وإنتاج الفيديو ومرحلة ما قبل الإنتاج
-                             يبدأ رسميًا بمجرد أن يصبح المشروع مضاءً باللون الأخضر. 
-                             في هذه المرحلة ، يتم الانتهاء من الاستعدادات للإنتاج<br/><br/>
-                            
-                             أثناء مرحلة ما قبل الإنتاج ، يتم تقسيم النص
-                                 في المشاهد الفردية مع القصص المصورة وجميع
-                                 المواقع ، والدعائم ، وأعضاء فريق التمثيل ، والأزياء ، والخاصة
-                                 يتم تحديد التأثيرات والتأثيرات البصرية.
+                            يتمتع فريقنا بمهارات عالمية في فن الاتصالات،<br/> تبدأ من الاستماع باهتمام كبير لمتطلبات عملائنا وإثرائها بالأفكار بشرح الطرق والتكنولوجيا الكفيلة بتحقيق رغبات وأفكار عملائنا.
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="9000" className="carousel-home-item carousel-logo">
-                    <img src="parallax/img/03wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-logo">
+                    <img src={this.setImgSrc(5)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption logo-caption">
                         <div className="title">
                             <div className="title-white">شعار</div>
@@ -133,24 +170,16 @@ class ArHome extends Component {
                         </div>
                         
                         <div className="description">
-                            في وقت كانت التكنولوجيا تحتل المرتبة الأولى
-                             الموقف ، بينما يتقلص العنصر البشري و
-                             يتراجع ، اخترنا أن نرفع شعارًا
-                             يميزنا عن غيرنا. اسمنا هو
-                             شعار ، CREW يصف أن فريقنا هو الأول
-                             الشيء الذي يميزنا ، نستخدم كلمة من a
-                             أحرف قليلة ، ولكن لها معنى أعمق بكثير و
-                             قيمة مثل <span style={{fontWeight: 700, color: "rgb(255, 255, 0)", transition: "none 0s ease 0s", textAlign: "inherit", lineHeight: "26px", borderWidth: "0px", margin: "0px", padding: "0px", letterSpacing: "0px", fontSize: "24px"}}>we - together - all of us .</span><br/><br/>
-                            
-                             في CREW ، نبذل قصارى جهدنا لنكون في طليعة
-                            الشركات التي تعمل في مجالات التنظيم
-                            الأحداث والإنتاج الإعلامي والدعم اللوجستي.
-                            
+                            لأننا نؤمن أن لا أحد يبلغ الكمال منفردا قررنا أن نتحرك كفريق يجمع بين أحدث مقومات التكنولوجيا ونبذة من الموهوبين، اخترنا أن نرفع شعارا يميزنا عن غيرنا،<br/>اسمنا هو شعارنا:
+                            <img style={{height: "5vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" />
+                            والذي يصف أن عملنا كفريق هو أول السمات التي تميزنا؛<br/>فـ<img style={{height: "5vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> على قلة أحرفها إلا أن لها قيمة ومعنى أعمق بكثير <br/>
+                            {/* <span style={{direction:"ltr !important"}}>Nobody is perfect but as a <img style={{height: "5vh", width: "auto"}} src="parallax/img/logo.svg" alt="logo" /> we are.</span> */}
+                            <span style={{fontFamily: '"Open Sans", sans-serif', fontWeight: 700, color: "rgb(255, 255, 0)", transition: "none 0s ease 0s", textAlign: "inherit", lineHeight: "26px", borderWidth: "0px", margin: "0px", padding: "0px", letterSpacing: "0px", fontSize: "22px"}}>Nobody is perfect but as a <img style={{height: "5vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> we are.</span>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="900000" className="carousel-home-item carousel-future">
-                    <img src="parallax/img/08wf.jpeg"  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
+                <Carousel.Item className="carousel-home-item carousel-future">
+                    <img src={this.setImgSrc(6)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption future-caption">
                         <div className="title">
                             <div className="title-white">اصنع</div>
@@ -161,7 +190,7 @@ class ArHome extends Component {
                             بالنظر إلى المستقبل ، فإننا نبذل جهودنا لإنشاء 
                              عرض لمنتجك عالي الجودة من الطراز العالمي يساعدك على
                              تحقيق النمو<br/>
-                             نحن نقدم أيضًا خدمات المرشدين من النساء أو الرجال ، بالإضافة إلى تخطيط وإدارة احتياجاتك بأدق التفاصيل. يشمل عرضنا كل شيء بدءًا من الخدمات اللوجستية والتوظيف وإدارة الاحتياجات.
+                             نحن نقدم أيضًا خدمات الاستشاريين من النساء أو الرجال ، بالإضافة إلى تخطيط وإدارة احتياجاتك بأدق التفاصيل. تشمل عروضنا كل شيء بدءًا من الخدمات اللوجستية والتوظيف وإدارة الاحتياجات.
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>

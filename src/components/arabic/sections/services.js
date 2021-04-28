@@ -19,7 +19,7 @@ class Services extends Component {
                                 loop
                                 animateOut={'fadeOut'}
                                 animateIn={'fadeIn'}
-                                autoplay
+                                // autoplay
                                 autoplayTimeout={9000}
                             >
                                 <div className="services-item item text-center text-md-right">
@@ -30,17 +30,17 @@ class Services extends Component {
                                 <div className="services-item item text-center text-md-right">
                                     <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الإبداع</h1>
                                     <div className="line-cont"><div className="testimonial-line"></div></div>
-                                    <p className="mb-5 per-slide text-white wow fadeInLeft"> يمكننا تصميم حدث بشكل مبدع يدور حول خيال المجموعة المستهدفة</p>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft"> يمكننا تصميم حدثك بشكل مبدع يدور حول أفكار وخيال العملاء المستهدفين لك</p>
                                 </div>
                                 <div className="services-item item text-center text-md-right">
                                     <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الطباعة</h1>
                                     <div className="line-cont"><div className="testimonial-line"></div></div>
-                                    <p className="mb-5 per-slide text-white wow fadeInLeft">يمكننا التعامل مع جميع جوانب الحدث الخاص بك بجودة عالية وطباعة ميسورة التكلفة</p>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">يمكننا التعامل مع جميع المتطلبات الطباعية للحدث الخاص بك بجودة عالية وأقل تكلفة</p>
                                 </div>
                                 <div className="services-item item text-center text-md-right">
                                     <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">هدايا العلامات التجارية</h1>
                                     <div className="line-cont"><div className="testimonial-line"></div></div>
-                                    <p className="mb-5 per-slide text-white wow fadeInLeft">نحن متخصصون في هدايا الشركات التي تبرز من بين الحشود ، مع المنتجات والتعبئة والتغليف التي تمثلك والتي سوف تتذكرها</p>
+                                    <p className="mb-5 per-slide text-white wow fadeInLeft">نحن متخصصون في هدايا الشركات التي تبرز علامتكم التجارية من بين منافسيكم ، مع المنتجات والتعبئة والتغليف التي تمثلك والتي سوف تتذكرها</p>
                                 </div>
                                 <div className="services-item item text-center text-md-right">
                                     <h1 className="mb-4 text-white per-slide wow fadeInLeft shining-text H1Services">الديكور</h1>

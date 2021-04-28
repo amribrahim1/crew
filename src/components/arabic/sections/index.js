@@ -78,7 +78,7 @@ class ArSections extends Component {
                                     state.destination.index === 0
                                         ? <Home />
                                         : this.state[0] === true
-                                            ? <Home /> : ""
+                                            ? <Home out={true} /> : ""
                                 }
                             </div>
                             <div className="section section2 bg-services pp-section pp-table">

@@ -4,13 +4,13 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <img className="d-block w-100 sliderIMG" src="parallax/img/17wf.jpeg" alt="Second slide" style={{height: "100vh"}} />
-                <div className="contactDIV">
+                <img className="d-block w-100 sliderIMG" src={window.innerWidth>window.innerHeight ? "parallax/img/17wf.jpeg" : "parallax/img/17af.jpeg"} alt="Second slide" style={{height: "100vh"}} />
+                <div className={window.innerWidth>window.innerHeight ? "contactDIV" : "contactDIV contactDIVMo"}>
                     <div>YOU CAN  <br/> 
                         <span className="contactSpan">REACH US</span> 
                     </div>
                     <p>
-                        <br/><br/>
+                        <br/>
                         We are looking forward towards hearing from
                         you. It will also be a great honor to have you visit
                         us at our office, which is located in Al-Olaya

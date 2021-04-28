@@ -21,6 +21,12 @@ class Sections extends Component {
     }
 
     onLeave(origin, destination, direction) {
+        if (origin.index === 2) {
+            this.setState({
+                ...this.state,
+                [origin.index]: false
+            });
+        }
         // console.log("Leaving section " + origin.index);
         // setTimeout(() => {
         //     this.setState({
@@ -72,7 +78,7 @@ class Sections extends Component {
                                     state.destination.index === 0
                                         ? <Home />
                                         : this.state[0] === true
-                                            ? <Home /> : ""
+                                            ? <Home out={true} /> : ""
                                 }
                             </div>
                             <div className="section section2 bg-services pp-section pp-table">
@@ -96,7 +102,7 @@ class Sections extends Component {
                                     state.destination.index === 3
                                         ? <About />
                                         : this.state[3] === true
-                                            ? <About /> : ""
+                                            ? <About out={true} /> : ""
                                 }   
                             </div>
                             <div className="section section5">
