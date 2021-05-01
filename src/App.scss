@@ -113,12 +113,9 @@ body {
 ul {list-style-type: none;}
 
 #page-scroll .section{
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     overflow: hidden;
-}
-#page-scroll .section{
-	height: 100%;
 }
 
 .animated-wrap:hover {

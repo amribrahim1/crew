@@ -5,7 +5,16 @@ class ArHome extends Component {
 	state = {
         index: 0,
         interval: 99999999999,
-        0: false,
+        intervals: [
+            11000,
+            13000,
+            11000,
+            11000,
+            11000,
+            11000,
+            11000,
+        ],
+        0: true,
         1: false,
         2: false,
         3: false,
@@ -35,15 +44,30 @@ class ArHome extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        // Typical usage (don't forget to compare props):
         if (prevProps !== this.props) {
             if (this.props.out === true) {
                 this.setState({
-                    interval: 99999999999
+                    intervals: [
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                    ]
                 });
             } else {
                 this.setState({
-                    interval: 99999999999
+                    intervals: [
+                        11000,
+                        13000,
+                        11000,
+                        11000,
+                        11000,
+                        11000,
+                        11000,
+                    ]
                 });
             }
         }
@@ -73,9 +97,9 @@ class ArHome extends Component {
                 fade
                 onSlide = {(e) => this.handleOnSlide(e)}
                 pause={false}
-                interval={this.state.interval}
+                // interval={this.state.interval}
             >
-                <Carousel.Item className="carousel-home-item carousel-story">
+                <Carousel.Item interval={this.state.intervals[0]} className="carousel-home-item carousel-story">
                     <img src={this.setImgSrc(0)} alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="tp-caption tp-resizeme carousel-home-caption story-caption">
                         <div className="title">
@@ -95,7 +119,7 @@ class ArHome extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-light">
+                <Carousel.Item interval={this.state.intervals[1]} className="carousel-home-item carousel-light">
                     <img src={this.setImgSrc(1)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption light-caption">
                         <div className="title">
@@ -111,16 +135,16 @@ class ArHome extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-family">
+                <Carousel.Item interval={this.state.intervals[2]} className="carousel-home-item carousel-family">
                     <img src={this.setImgSrc(2)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption family-caption">
                         <div className="title">
                             <div className="title-white">عائلة</div>
-                            <div className="title-yellow">CREW</div>
+                            <div className="title-yellow"><img style={{height: "7vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /></div>
                         </div>
                         
                         <div className="description">
-                            في CREW ، نحن في الواقع عائلة أكثر من مجرد
+                            في <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> ، نحن في الواقع عائلة أكثر من مجرد
                              زملاء. نختلف في الخبرة والجنسيات
                              واللغات والألوان والتقاليد، ولكن في داخل و 
                              خارج المكتب ، نحن جميعا نكون فريقا واحدا يتفق على النجاح.
@@ -130,7 +154,7 @@ class ArHome extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-services">
+                <Carousel.Item interval={this.state.intervals[3]} className="carousel-home-item carousel-services">
                     <img src={this.setImgSrc(3)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption services-caption">
                         <div className="title">
@@ -148,7 +172,7 @@ class ArHome extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-communication">
+                <Carousel.Item interval={this.state.intervals[4]} className="carousel-home-item carousel-communication">
                     <img src={this.setImgSrc(4)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption communication-caption">
                         <div className="title">
@@ -161,7 +185,7 @@ class ArHome extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-logo">
+                <Carousel.Item interval={this.state.intervals[5]} className="carousel-home-item carousel-logo">
                     <img src={this.setImgSrc(5)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption logo-caption">
                         <div className="title">
@@ -178,7 +202,7 @@ class ArHome extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-future">
+                <Carousel.Item interval={this.state.intervals[6]} className="carousel-home-item carousel-future">
                     <img src={this.setImgSrc(6)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption future-caption">
                         <div className="title">

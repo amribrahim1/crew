@@ -4,7 +4,18 @@ import Carousel from 'react-bootstrap/Carousel';
 class About extends Component {
     state = {
         index: 0,
-        interval: 6000,
+        intervals: [
+            11000,
+            5000,
+            11000,
+            5000,
+            5000,
+            9000,
+            13000,
+            11000,
+            11000,
+            9000,
+        ],
         0: false,
         1: false,
         2: false,
@@ -44,15 +55,36 @@ class About extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        // Typical usage (don't forget to compare props):
         if (prevProps !== this.props) {
             if (this.props.out === true) {
                 this.setState({
-                    interval: 99999999999
+                    intervals: [
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                    ]
                 });
             } else {
                 this.setState({
-                    interval: 6000
+                    intervals: [
+                        11000,
+                        5000,
+                        11000,
+                        5000,
+                        5000,
+                        9000,
+                        13000,
+                        11000,
+                        11000,
+                        9000,
+                    ]
                 });
             }
         }
@@ -79,22 +111,21 @@ class About extends Component {
             <Carousel
                 className="about-carousel"
                 onSlide = {(e) => this.handleOnSlide(e)}
-                pause="hover"
+                pause={false}
                 controls={false}
-                interval={this.state.interval}
             >
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[0]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG rev-slidebg" src={this.setImgSrc(0)} alt="ABOUT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content1">
                             <div>
-                                <span>ABOUT</span>  <span className="abut-content1Span">&nbsp;CREW&nbsp;&nbsp;</span >
+                                <span>ABOUT</span>  <img style={{height: "10vh", width: "auto", verticalAlign:"middle", marginTop: "1%"}} src="parallax/img/logo.svg" alt="logo" />
                             </div>
-                            <p><br/>From Riyadh, the heart and capital of the kingdom of Saudi Arabia, we established the crew for event & media production and logistic support. <br/> By our successful team and the trust of our customers who have supported us since our first step, we have</p>
+                            <p><br/>From Riyadh, the heart and capital of the kingdom of Saudi Arabia, we established the <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> for event & media production and logistic support. <br/> By our successful team and the trust of our customers who have supported us since our first step, we have</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[1]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(1)} alt="ENTERTAINMENT SHOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content2">
@@ -104,7 +135,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[2]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(2)} alt="CREATE INSPIRATION" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content3"  >
@@ -125,7 +156,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[3]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(3)} alt="EVENT MANAGEMENT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content4"   >
@@ -136,7 +167,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[4]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(4)} alt="CREATVE & CONCEPT" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content5"  >
@@ -148,7 +179,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[5]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(5)} alt="IMAGINATION" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content6"  >
@@ -168,7 +199,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[6]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(6)} alt="PRODUCTION SERVICES" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className="abut-content7" >
@@ -180,7 +211,7 @@ class About extends Component {
                                 In this phase it is key to keep planning ahead of the daily
                                 shoot. The primary aim is to stick to the budget and
                                 schedule, this requires constant vigilance.<br/><br/>
-                                More CREW will be recruited at this stage, such as the
+                                More <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> will be recruited at this stage, such as the
                                 property master, script supervisor, assistant directors,
                                 stills photographer, picture editor, and sound editors.
                                 These are just the most common roles in filmmaking; the
@@ -193,7 +224,7 @@ class About extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval="700000" className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[7]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(7)} alt="LET THE WORLD KNOW" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content8">
@@ -204,13 +235,13 @@ class About extends Component {
                                 whether you want to further expose your
                                 products, or want to build up your brand from
                                 scratch, and anything in between, rest assure
-                                that CREW has a dedicated team of professionals
+                                that <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> has a dedicated team of professionals
                                 who will take it to the next level.
                             </p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[8]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(8)} alt="MOTION GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content9"  >
@@ -220,14 +251,14 @@ class About extends Component {
                             <p>
                                 <br/>
                                 When it is time to set things in motion and tell
-                                your story throuh an animation, CREW has some
+                                your story throuh an animation, <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> has some
                                 really talented artist who will turn any message or
                                 story into an eye catching animation.
                             </p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-about-item">
+                <Carousel.Item interval={this.state.intervals[9]} className="carousel-about-item">
                     <img className="d-block w-100 sliderIMG" src={this.setImgSrc(9)} alt="INFO GRAPHICS" />
                     <Carousel.Caption className="carousel-about-caption">
                         <div className=" abut-content10" >
@@ -238,7 +269,7 @@ class About extends Component {
                                 <br/>
                                 Data is extremely important for you and your
                                 clients, therefore we wanted to add a team of
-                                specialists to our CREW, to assure that all your
+                                specialists to our <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" />, to assure that all your
                                 requirements are covered in one place.
                             </p>
                         </div>

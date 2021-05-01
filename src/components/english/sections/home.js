@@ -5,7 +5,16 @@ class Home extends Component {
 	state = {
         index: 0,
         interval: 9000,
-        0: false,
+        intervals: [
+            11000,
+            13000,
+            11000,
+            11000,
+            11000,
+            11000,
+            11000,
+        ],
+        0: true,
         1: false,
         2: false,
         3: false,
@@ -35,15 +44,30 @@ class Home extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        // Typical usage (don't forget to compare props):
         if (prevProps !== this.props) {
             if (this.props.out === true) {
                 this.setState({
-                    interval: 99999999999
+                    intervals: [
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                        99999999999,
+                    ]
                 });
             } else {
                 this.setState({
-                    interval: 9000
+                    intervals: [
+                        11000,
+                        13000,
+                        11000,
+                        11000,
+                        11000,
+                        11000,
+                        11000,
+                    ]
                 });
             }
         }
@@ -76,9 +100,9 @@ class Home extends Component {
                 fade
                 onSlide = {(e) => this.handleOnSlide(e)}
                 pause={false}
-                interval={this.state.interval}
+                // interval={this.state.interval}
             >
-                <Carousel.Item className="carousel-home-item carousel-story">
+                 <Carousel.Item interval={this.state.intervals[0]} className="carousel-home-item carousel-story">
                     <img src={this.setImgSrc(0)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption story-caption">
                         <div className="title">
@@ -91,7 +115,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-light">
+                 <Carousel.Item interval={this.state.intervals[1]} className="carousel-home-item carousel-light">
                     <img src={this.setImgSrc(1)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption light-caption">
                         <div className="title">
@@ -113,17 +137,17 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-family">
+                 <Carousel.Item interval={this.state.intervals[2]} className="carousel-home-item carousel-family">
                     <img src={this.setImgSrc(2)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption family-caption">
                         <div className="title">
-                            <div className="title-white">THE CREW</div>
+                            <div className="title-white">THE <img style={{height: "7vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /></div>
                             <div className="title-yellow">FAMILY</div>
                         </div>
                         
                         <div className="description">
                             even though the word crew really means team...
-                            at CREW we actually are more of a family than just
+                            at <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> we actually are more of a family than just
                             teammates. We differ in experience, nationalities,
                             languages, colors &amp; traditions, but inside and
                             outside the office we all become one, and we all
@@ -137,7 +161,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-services">
+                 <Carousel.Item interval={this.state.intervals[3]} className="carousel-home-item carousel-services">
                     <img src={this.setImgSrc(3)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption services-caption">
                         <div className="title">
@@ -158,7 +182,7 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-communication">
+                 <Carousel.Item interval={this.state.intervals[4]} className="carousel-home-item carousel-communication">
                     <img src={this.setImgSrc(4)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption communication-caption">
                         <div className="title">
@@ -179,11 +203,11 @@ class Home extends Component {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-logo">
+                 <Carousel.Item interval={this.state.intervals[5]} className="carousel-home-item carousel-logo">
                     <img src={this.setImgSrc(5)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption logo-caption">
                         <div className="title">
-                            <div className="title-white">THE CREW</div>
+                            <div className="title-white">THE <img style={{height: "7vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /></div>
                             <div className="title-yellow">LOGO</div>
                         </div>
                         
@@ -192,19 +216,19 @@ class Home extends Component {
                             position, while the human element shrinks and
                             retracts, we chose to raise a slogan that
                             distinguishes us from others. Our name is our
-                            slogan, CREW describes that our team is the first
+                            slogan, <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> describes that our team is the first
                             thing that distinguishes us, we use a word from a
                             few letters, but it has a far deaper meaning and
                             value, such as <span style={{fontWeight: 900, color: "rgb(255, 255, 0)", transition: "none 0s ease 0s", textAlign: "inherit", lineHeight: "26px", borderWidth: "0px", margin: "0px", padding: "0px", letterSpacing: "0px", fontSize: "18px"}}>we - together - all of us .</span><br/><br/>
                             
-                                At CREW, we do our best to be at the forefront of
+                                At <img style={{height: "3vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" />, we do our best to be at the forefront of
                                 companies that work in the fields of organizing
                                 events, media production and logistical support.
                             
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="carousel-home-item carousel-future">
+                 <Carousel.Item interval={this.state.intervals[6]} className="carousel-home-item carousel-future">
                     <img src={this.setImgSrc(6)}  alt="" data-bgposition="center center" data-kenburns="on" data-duration="100" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" className="rev-slidebg" data-no-retina />
                     <Carousel.Caption className="carousel-home-caption future-caption">
                         <div className="title">

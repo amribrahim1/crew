@@ -90,7 +90,7 @@ class ArHeader extends Component {
                                 <li className="nav-item">
                                     <a className="nav-link link" href="#contact" onClick={this.closeSideMenu}>اتصل بنا</a>
                                 </li>
-                                <li className="nav-item" style={{width: "130px", }}>
+                                <li className="nav-item" style={{width: "130px"}}>
                                     <Select
                                         className="selectpicker"
                                         value={this.props.language}
@@ -105,7 +105,8 @@ class ArHeader extends Component {
                                                 top: "45px",
                                                 width: "100%",
                                                 border: "1px solid black",
-                                                borderRadius: "5px"
+                                                borderRadius: "5px",
+                                                cursor: "pointer"
                                             })
                                         }}
                                         onChange={this.props.changeLanguage}

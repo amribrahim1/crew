@@ -33,7 +33,7 @@ class Header extends Component {
                             <li><a className="link leater-space" href="#portfolio">Portfolio</a></li>
                             <li><a className="link leater-space" href="#about">About</a></li>
                             <li><a className="link leater-space" href="#contact">Contact</a></li>
-                            <li style={{width: "130px", }}>
+                            <li style={{width: "130px"}}>
                                 <Select
                                     className="selectpicker"
                                     value={this.props.language}
@@ -48,7 +48,8 @@ class Header extends Component {
                                             top: "45px",
                                             width: "100%",
                                             border: "1px solid black",
-                                            borderRadius: "5px"
+                                            borderRadius: "5px",
+                                            cursor: "pointer"
                                         })
                                     }}
                                     onChange={this.props.changeLanguage}

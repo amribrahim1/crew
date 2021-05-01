@@ -109,86 +109,8 @@ ul {list-style-type: none;}
     background-color: #fff;
     overflow: hidden;
 }
-/*-------------
-    loader
- -------------*/
-.loader {
-    background: #000;
-    text-align: center;
-    height: 100vh;
-    z-index: 999;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.linear-activity {
-    overflow: hidden;
-    width: 100%;
-    height: 4px;
-    background-color: transparent;
-    margin: 20px auto;
-}
 
-.determinate {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
-    -webkit-transition: width 500ms ease-out 1s;
-    -moz-transition: width 500ms ease-out 1s;
-    -o-transition: width 500ms ease-out 1s;
-    transition: width 500ms ease-out 1s;
-    background-color: #ffff00;
-}
-
-.indeterminate {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.indeterminate:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    background-color: #ffff00;
-    animation: indeterminate_first 1.5s infinite ease-out;
-}
-
-.indeterminate:after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    background-color: #ffff00;
-    animation: indeterminate_second 1.5s infinite ease-in;
-}
-
-@keyframes indeterminate_first {
-    0% {
-        left: -100%;
-        width: 100%;
-    }
-    100% {
-        left: 100%;
-        width: 10%;
-    }
-}
-
-@keyframes indeterminate_second {
-    0% {
-        left: -150%;
-        width: 100%;
-    }
-    100% {
-        left: 100%;
-        width: 10%;
-    }
-}
-/*-------------
-   end loader
- -------------*/
 .slider-social{
     display: inline-block;
     position: absolute;
@@ -640,9 +562,9 @@ ul {list-style-type: none;}
 }
 .abut-content1{
     position: absolute; 
-    top:30%; 
+    top:25%; 
     right: 10%; 
-    width: 40%;
+    width: 50%;
     font-family: 'Open Sans', sans-serif; 
     font-weight: 800; 
     font-style: italic; 
@@ -670,13 +592,13 @@ ul {list-style-type: none;}
 .abut-content4{position: absolute; top:35%; right: 10%; width: 55%; font-size:5vw; text-align: center; line-height: 1; font-weight:800; color:#000000; font-style: italic; font-family: 'Open Sans', sans-serif;}
 .abut-content4Span1{letter-spacing: 2px; font-size: 11vw; color: #000000;}
 .abut-content4Span2{letter-spacing: 5px;}
-.abut-content5{position: absolute; top:35%; right: 10%; width: 70%; font-size:5vw;letter-spacing: 2px; line-height: .9; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif; text-align: center;}
+.abut-content5{position: absolute; top:30%; right: 10%; width: 70%; font-size:5vw;letter-spacing: 2px; line-height: .9; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif; text-align: center;}
 .abut-content5Span1{ letter-spacing: -5px; font-size: 9vw; color: #ffff00;}
 .abut-content5Span2{letter-spacing: 2px;}
 .abut-content6{position: absolute; top:40%; right: 13%; width: 30%;font-size:5vw; line-height: .3; font-weight:800; color:#ffff00; font-style: italic; font-family: 'Open Sans', sans-serif;}
 .abut-content6Span1{font-size: 2vw;}
 .abut-content6Span2{color: #ffffff; font-size: 3vw; line-height: 1.6;}
-.abut-content6 p{font-family: 'Open Sans', sans-serif;line-height: 1.4;   font-size:1.3vw; font-weight: 300; margin-top: 20px;}
+.abut-content6 p{font-family: 'Open Sans', sans-serif;line-height: 1.5;   font-size:1.3vw; font-weight: 300; margin-top: 20px;}
 .abut-content7{position: absolute; top:27%; left: 8%; width: 30%; font-size:3vw; letter-spacing: 1px ; line-height: 1; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif; }
 .abut-content7Span1{color: #ffff00; font-size:4.5vw;}
 .abut-content7 p{font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.3vw; font-weight: 300;}
@@ -689,7 +611,7 @@ ul {list-style-type: none;}
 .abut-content10{position: absolute; top:27%; left: 8%; width: 30%;font-size:5vw; line-height: .8; font-weight:800; color:#ffffff; font-style: italic; font-family: 'Open Sans', sans-serif; }
 .abut-content10Span1{color: #ffff00; font-size: 4vw;}
 .abut-content10 p{font-family: 'Open Sans', sans-serif;line-height: 1.1;   font-size:1.3vw; font-weight: 300; }
-.contactDIV{position: absolute; top:27%; left: 7%; width: 35%; color: #000000; font-size:3vw; /*line-height: .8;*/ font-weight:800;  font-style: italic; font-family: 'Open Sans', sans-serif;}
+.contactDIV{position: absolute; top:10%; left: 7%; width: 35%; color: #000000; font-size:3vw; /*line-height: .8;*/ font-weight:800;  font-style: italic; font-family: 'Open Sans', sans-serif;}
 .contactDIV a { color: #000; }
 .contactSpan{font-size: 6vw;}
 .contactDIV p{width: 80%; font-family: 'Open Sans', sans-serif;line-height: 1.5;   font-size:1.2vw; font-weight: 400;}
@@ -706,12 +628,12 @@ ul {list-style-type: none;}
     .abut-content6 p{font-size: 3.4vw;}
 } */
 @media screen and (max-width:750px) {
-    .abut-content1{position: absolute; top:25%; width:80%; font-size: 10vw; font-size: 9vw;}
-    .abut-content1 p{font-size: 6vw;}
+    .abut-content1{position: absolute; top:20%; width:90%; font-size: 9vw;}
+    .abut-content1 p{font-size: 5.1vw;}
     .abut-content1Span{height: 26px; padding-top: 0; margin-left: -4px;}
     .abut-content2{width: 80%; top :50%;font-size:8vw; line-height: 1; letter-spacing: 0px; }
     .abut-content2span1{letter-spacing: -2px; font-size: 20vw;}
-    .abut-content3{top:20% !important; right: 10%; width: 80%; font-size: 11vw;}
+    .abut-content3{top:14% !important; right: 10%; width: 80%; font-size: 11vw;}
     .abut-content3 p{font-size: 5vw;}
     .abut-content4{top:40%; width: 80%; font-size: 9vw;}
     .abut-content4Span1{font-size: 20vw;}
