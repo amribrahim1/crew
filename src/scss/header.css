@@ -349,6 +349,8 @@
 }
 .side-footer{
     text-align: center;
+    align-self: flex-end;
+    margin-top: 80px;
 }
 
 .social-icons-simple{

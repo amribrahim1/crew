@@ -198,7 +198,7 @@ class ArHome extends Component {
                             <img style={{height: "5vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" />
                             والذي يصف أن عملنا كفريق هو أول السمات التي تميزنا؛<br/>فـ<img style={{height: "5vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> على قلة أحرفها إلا أن لها قيمة ومعنى أعمق بكثير <br/>
                             {/* <span style={{direction:"ltr !important"}}>Nobody is perfect but as a <img style={{height: "5vh", width: "auto"}} src="parallax/img/logo.svg" alt="logo" /> we are.</span> */}
-                            <span style={{fontFamily: '"Open Sans", sans-serif', fontWeight: 700, color: "rgb(255, 255, 0)", transition: "none 0s ease 0s", textAlign: "inherit", lineHeight: "26px", borderWidth: "0px", margin: "0px", padding: "0px", letterSpacing: "0px", fontSize: "22px"}}>Nobody is perfect but as a <img style={{height: "5vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> we are.</span>
+                            <span style={{fontFamily: '"Open Sans", sans-serif', fontWeight: 700, color: "rgb(255, 255, 0)", transition: "none 0s ease 0s", textAlign: "inherit", lineHeight: "26px", borderWidth: "0px", margin: "0px", padding: "0px", letterSpacing: "0px", fontSize: "19px"}}>Nobody is perfect but as a <img style={{height: "4vh", width: "auto", verticalAlign:"middle"}} src="parallax/img/logo.svg" alt="logo" /> we are.</span>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>

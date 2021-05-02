@@ -69,9 +69,8 @@ class App extends Component {
 			return (
 				<>
 				<Loading />
-				{this.state.language.value === "english" ? <Header language={this.state.language} changeLanguage={this.changeLanguage} /> : <ArHeader language={this.state.language} changeLanguage={this.changeLanguage} /> }
-				{this.state.language.value === "english" ? <Sections /> : <ArSections /> }
-				<Sections language={this.state.language.value} />
+				{this.state.language.value === "arabic" ? <ArHeader language={this.state.language} changeLanguage={this.changeLanguage} /> : <Header language={this.state.language} changeLanguage={this.changeLanguage} /> }
+				{this.state.language.value === "arabic" ? <ArSections /> : <Sections /> }
 				
 				<Cursor />
 				</>

@@ -74,7 +74,7 @@ class Cursor extends React.Component {
             );
         } else {
             return (
-                <div></div>
+                null
             );
         }
     }

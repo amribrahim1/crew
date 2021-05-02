@@ -1,10 +1,17 @@
 .home-carousel {
     width: 100%;
+    max-height: 100%;
+    height: 100%;
     .carousel-home-item {
+        position: relative;
         width: 100%;
-        img {
+        max-height: 100%;
+        height: 100%;
+        > img {
             width: 100%;
             height: 100vh;
+            position: absolute;
+            top: 0;
         }
         .carousel-home-caption {
             position: absolute;
@@ -24,7 +31,8 @@
             .title {
                 transition: 1s;
                 .title-white, .title-yellow {
-                    margin: 50px 10px;
+                    // margin: 50px 10px;
+                    line-height: normal;
                     font-family: "Open Sans", sans-serif;
                     font-style: italic;
                     text-transform: capitalize;
@@ -67,6 +75,11 @@
 
                 }
             }
+            @media only screen and (min-width: 750px) {
+                .title {
+                    margin-bottom: 30px;
+                }
+            }
             .description {
                 font-weight: 100;
                 color: rgb(255, 255, 255);
@@ -95,15 +108,16 @@
             .carousel-home-caption {
                 width: 88%;
                 // max-width: 98%;
-                top: 12%;
+                top: 15%;
                 left: 3% !important;
                 background: rgba(0, 0, 0, 0.5);
                 border-radius: 8px;
                 padding: 5px;
-                margin-top: 30px !important;
+                // margin-top: 30px !important;
                 .title {
+                    margin-bottom: 5px;
                     .title-white, .title-yellow {
-                        line-height: 20px;
+                        line-height: 36px;
                     }
                     .title-white {
                         font-size: 30px;
@@ -126,18 +140,18 @@
         }
         @media only screen and (max-width: 750px) {
             .story-caption { 
-                top: 15% !important;   
+                top: 20% !important;   
                 .title-white, .title-yellow {
-                    line-height: 0px !important;
+                    // line-height: 25px !important;
                 }
                 .title-white {
-                    margin-top: 5px;
+                    // margin-top: 5px;
                 }
                 .title-yellow {
                     // font-size: 40px;
                 }
                 .description {
-                    font-size: 15px;
+                    font-size: 18px;
                 }
             }
         }
@@ -151,17 +165,17 @@
         }
         @media only screen and (max-width: 750px) {
             .light-caption { 
-                top: 14% !important;   
+                top: 12% !important;   
                 .title-white, .title-yellow {
-                    margin-bottom: 10px !important;
+                    // margin-bottom: 10px !important;
                 }
                 .title-white {
                     font-size: 30px !important;
-                    margin: 20px auto !important;
+                    // margin: 20px auto !important;
                 }
                 .title-yellow {
                     font-size: 40px !important;
-                    margin-top: 15px !important;
+                    // margin-top: 15px !important;
                 }
                 .description {
                     font-size: 13px;
@@ -179,19 +193,19 @@
         }
         @media only screen and (max-width: 750px) {
             .family-caption { 
-                top: 15% !important;   
+                top: 14% !important;   
                 .title-white, .title-yellow {
-                    margin-bottom: 10px !important;
+                    // margin-bottom: 10px !important;
                 }
                 .title-white {
                     font-size: 30px !important;
                 }
                 .title-yellow {
                     font-size: 40px !important;
-                    margin-top: 15px !important;
+                    // margin-top: 15px !important;
                 }
                 .description {
-                    font-size: 14px;
+                    font-size: 16px;
                 }
             }
         }
@@ -206,42 +220,43 @@
         }
         @media only screen and (max-width: 750px) {
             .services-caption {  
+                top: 17% !important;   
                 .title-white, .title-yellow {
-                    margin-bottom: 10px !important;
+                    // margin-bottom: 10px !important;
                 }
                 .title-white {
                     font-size: 27px !important;
                 }
                 .title-yellow {
                     font-size: 30px !important;
-                    margin-top: 15px !important;
+                    // margin-top: 15px !important;
                 }
                 .description {
-                    font-size: 15px;
+                    font-size: 17px;
                 }
             }
         }
     }
     .carousel-communication {
         .communication-caption {
-            top: 8%;
+            top: 15%;
             left: 100px;
             right: auto;
             bottom: auto;
             @media only screen and (max-width: 750px) {
-                top: 15%;
+                top: 18%;
                 .title-white, .title-yellow {
-                    margin-bottom: 5px;
+                    // margin-bottom: 5px;
                 }
                 .title-white {
                     font-size: 7vw !important;
                 }
                 .title-yellow {
                     font-size: 8vw !important;
-                    margin-top: 5px;
+                    // margin-top: 5px;
                 }
                 .description {
-                    font-size: 15px;
+                    font-size: 17px;
                 }
             }
         }
@@ -256,16 +271,16 @@
         }
         @media only screen and (max-width: 750px) {
             .logo-caption {  
-                top: 16% !important; 
+                top: 12% !important; 
                 .title-white, .title-yellow {
-                    margin: 10px auto !important;
+                    // margin: 10px auto !important;
                 }
                 .title-white {
                     font-size: 27px !important;
                 }
                 .title-yellow {
                     font-size: 30px !important;
-                    margin-top: 15px !important;
+                    // margin-top: 15px !important;
                 }
                 .description {
                     font-size: 15px;
@@ -283,16 +298,19 @@
         }
         @media only screen and (max-width: 750px) {
             .future-caption {  
-                top: 12% !important; 
+                top: 19% !important; 
                 .title-white, .title-yellow {
-                    margin-bottom: 20px !important;
+                    // margin-bottom: 20px !important;
                 }
                 .title-white {
                     font-size: 27px !important;
                 }
                 .title-yellow {
                     // font-size: 30px !important;
-                    margin-top: 30px !important;
+                    // margin-top: 30px !important;
+                }
+                .description {
+                    font-size: 18px;
                 }
             }
         }
@@ -361,9 +379,9 @@
 }
 .carousel-control-next {
     top: auto;
-    bottom: 8%;
+    bottom: 2%;
 }
 
-.carousel-indicators {
-    bottom: 35px;
+.carousel-inner {
+    height: 100%;
 }

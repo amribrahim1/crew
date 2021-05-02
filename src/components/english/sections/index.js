@@ -72,7 +72,7 @@ class Sections extends Component {
                         )
                     }
                     return (
-                        <div>
+                        <>
                             <div className="section section1">
                                 {state.destination && 
                                     state.destination.index === 0
@@ -113,7 +113,7 @@ class Sections extends Component {
                                             ? <Contact /> : ""
                                 }   
                             </div>
-                        </div>
+                        </>
                     );
                 }}
             />

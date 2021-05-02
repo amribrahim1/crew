@@ -10,7 +10,17 @@
         }
         .title {
             width: auto;
-            margin-bottom: 30px;
+            @media only screen and (max-width: 750px) {
+                margin-bottom: 10px;
+                .title-white, .title-yellow {
+                    line-height: 60px !important;
+                }
+            }
+            @media only screen and (min-width: 750px) {
+                .title-white, .title-yellow {
+                    line-height: 70px !important;
+                }
+            }
             .title-white {
                 font-weight: 400;
                 font-size: 55px;
@@ -18,7 +28,7 @@
             }
             .title-yellow {
                 font-weight: 1000;
-                font-size: 70px;
+                font-size: 60px;
                 text-align: right;
             }
         }
@@ -36,44 +46,57 @@
             background: rgba(0, 0, 0, 0.5);
         }
     }
+    .carousel-light {
+        .title-white, .title-yellow {
+            // line-height: 24px;
+        }
+    }
     @media only screen and (max-width: 750px) {
         .light-caption, .story-caption { 
-            .title-white, .title-yellow {
-                margin-bottom: 15px !important;
-            }
-            .title-white {
-                font-size: 40px !important;
-                margin: 20px auto !important;
-            }
-            .title-yellow {
-                font-size: 50px !important;
-                margin-top: 20px !important;
-            }
+            
         }
         .light-caption {
             .description {
-                font-size: 16px !important;
+                font-size: 15px !important;
+                line-height: 22px !important;
+            }
+        }
+        .family-caption {
+            .description {
+                font-size: 17px !important;
+                line-height: 27px !important;
             }
         }
         .family-caption, .services-caption {
             .title-white {
                 font-size: 60px !important;
-                margin: 20px auto !important;
+                // margin: 20px auto !important;
             }
             .title-yellow {
                 font-size: 70px !important;
-                margin-top: 20px !important;
+                // margin-top: 20px !important;
+            }
+        }
+        @media only screen and (max-width: 750px) {
+            .logo-caption {  
+                top: 18.5% !important; 
+                .title {
+                    margin-bottom: 0 !important;
+                }
+                .description {
+                    font-size: 14px !important;
+                }
             }
         }
         .communication-caption {
             .title-white {
                 font-size: 40px !important;
-                margin: 20px auto !important;
+                // margin: 20px auto !important;
             }
             .title-yellow {
                 font-size: 50px !important;
-                margin-top: 30px !important;
-                margin-bottom: 0px !important;
+                // margin-top: 30px !important;
+                // margin-bottom: 0px !important;
             }
         }
     }
@@ -107,17 +130,26 @@
         .abut-content1 {
             p {
                 line-height: 1.5;
+                font-weight: 600;
             }
         }
         .abut-content3 {
+            text-align: right;
             top: 28%;
             > div {
                 margin-bottom: 30px;
-                text-align: right;
                 line-height: 1.5; 
             }
             p {
                 line-height: 1.5;
+            }
+        }
+        @media screen and (max-width: 993px) {
+            .abut-content3 {
+                top: 12% !important;
+            }
+            .abut-content3Span1 {
+                letter-spacing: normal;
             }
         }
         .abut-content4 {
@@ -149,7 +181,7 @@
             }
             @media screen and (max-width: 993px) {
                 > div {
-                    line-height: 0.7;
+                    line-height: 1;
                 }
             }
         }
@@ -175,6 +207,9 @@
             @media screen and (max-width: 993px) {
                 > div {
                     line-height: 1.3;
+                }
+                p {
+                    font-size: 5vw;
                 }
             }
         }
