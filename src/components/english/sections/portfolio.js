@@ -38,6 +38,18 @@ class Portfolio extends Component {
         11: false,
         12: false,
         13: false,
+        14: false,
+        15: false,
+        16: false,
+        17: false,
+        18: false,
+        19: false,
+        20: false,
+        21: false,
+        22: false,
+        23: false,
+        24: false,
+        25: false,
         titles: [
             "Mobily",
             "Jeddah PC Marine",
@@ -52,8 +64,34 @@ class Portfolio extends Component {
             "Saudi Standards, Metrology and Quality org",
             "Bank Albilad",
             "Biban Build Up",
+            "GCC Board Directors Institute",
+            "Capital Market Authority",
+            "Krikita nuts",
+            "Biban (Success story)",
+            "Saudi Ministry of Health",
+            "Biban (Success story)",
+            "GEELY",
+            "Monsha'at Support Center",
+            "Mecca Masar",
+            "King Khalid international airport",
+            "King Khalid international airport",
+            "General Authority of Civil Aviation",
+            "Saudi Investment Recycling Company",
         ],
         subtitles: [
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
+            "Video",
             "Video",
             "Video",
             "Video",
@@ -82,6 +120,19 @@ class Portfolio extends Component {
             10: true,
             11: true,
             12: true,
+            13: true,
+            14: true,
+            15: true,
+            16: true,
+            17: true,
+            18: true,
+            19: true,
+            20: true,
+            21: true,
+            22: true,
+            23: true,
+            24: true,
+            25: true,
         }
     }
     
@@ -153,7 +204,7 @@ class Portfolio extends Component {
                                                 
                                                     <div class="counter">${index<9 ? "0" : ""}${index+1}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;13</div>
                                                 <div>
-                                                    <div class="subtitle">${this.state.subtitles[index]}</div>
+                                                    <!-- <div class="subtitle">${this.state.subtitles[index]}</div> -->
                                                     <div class="title">${this.state.titles[index]}</div>
                                                 </div>
                                             </div>`
@@ -478,6 +529,318 @@ class Portfolio extends Component {
                                     
                                     {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
                                 </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[13] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/aQAzs8hYyPA?autoplay=1&loop=1&controls=0&disablekb=1&playlist=aQAzs8hYyPA' width="100%" height="100%" playing muted={this.state.muted[13]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(13)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[13]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[14] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/fLYpOe_sFUg?autoplay=1&loop=1&controls=0&disablekb=1&playlist=fLYpOe_sFUg' width="100%" height="100%" playing muted={this.state.muted[14]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(14)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[14]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[15] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/xmEK7e-LUdg?autoplay=1&loop=1&controls=0&disablekb=1&playlist=xmEK7e-LUdg' width="100%" height="100%" playing muted={this.state.muted[15]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(15)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[15]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[16] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/DnPuGMUv7bs?autoplay=1&loop=1&controls=0&disablekb=1&playlist=DnPuGMUv7bs' width="100%" height="100%" playing muted={this.state.muted[16]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(16)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[16]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[17] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/OAoSYXtleKk?autoplay=1&loop=1&controls=0&disablekb=1&playlist=OAoSYXtleKk' width="100%" height="100%" playing muted={this.state.muted[17]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(17)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[17]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[18] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/a9i2IRMFn_w?autoplay=1&loop=1&controls=0&disablekb=1&playlist=a9i2IRMFn_w' width="100%" height="100%" playing muted={this.state.muted[18]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(18)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[18]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[19] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/qRr839j8uzE?autoplay=1&loop=1&controls=0&disablekb=1&playlist=qRr839j8uzE' width="100%" height="100%" playing muted={this.state.muted[19]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(19)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[19]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[20] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/xFtZaN5VUow?autoplay=1&loop=1&controls=0&disablekb=1&playlist=xFtZaN5VUow' width="100%" height="100%" playing muted={this.state.muted[20]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(20)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[20]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[21] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/GQLITAWNwzU?autoplay=1&loop=1&controls=0&disablekb=1&playlist=GQLITAWNwzU' width="100%" height="100%" playing muted={this.state.muted[21]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(21)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[21]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[22] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/h8eILLjvqws?autoplay=1&loop=1&controls=0&disablekb=1&playlist=h8eILLjvqws' width="100%" height="100%" playing muted={this.state.muted[22]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(22)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[22]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[23] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/PfiiwlCeG0k?autoplay=1&loop=1&controls=0&disablekb=1&playlist=PfiiwlCeG0k' width="100%" height="100%" playing muted={this.state.muted[23]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(23)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[23]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[24] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/I2gO-FvoOus?autoplay=1&loop=1&controls=0&disablekb=1&playlist=I2gO-FvoOus' width="100%" height="100%" playing muted={this.state.muted[24]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(24)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[24]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
+                                {this.state[25] ? <SwiperSlide className="" style={{maxHeight: "100vh"}}>
+                                    <div className="img-mask">
+                                        <ReactPlayer url='https://www.youtube.com/embed/6AymRdFEZIM?autoplay=1&loop=1&controls=0&disablekb=1&playlist=6AymRdFEZIM' width="100%" height="100%" playing muted={this.state.muted[25]} loop className="myVideo" />
+                                        <svg version="1.1" id="Capa_1" x="0px" y="0px" onClick={() => this.toggleMute(25)} viewBox="0 0 448.075 448.075" style={{enableBackground:"new 0 0 448.075 448.075"}}>
+                                            {this.state.muted[25]
+                                                ?   <>
+                                                        <path d="M352.021,16.075c0-6.08-3.52-11.84-8.96-14.4c-5.76-2.88-12.16-1.92-16.96,1.92l-141.76,112.96l167.68,167.68V16.075z"/>
+                                                        <path d="M443.349,420.747l-416-416c-6.24-6.24-16.384-6.24-22.624,0s-6.24,16.384,0,22.624l100.672,100.704h-9.376
+                                                            c-9.92,0-18.56,4.48-24.32,11.52c-4.8,5.44-7.68,12.8-7.68,20.48v128c0,17.6,14.4,32,32,32h74.24l155.84,124.48
+                                                            c2.88,2.24,6.4,3.52,9.92,3.52c2.24,0,4.8-0.64,7.04-1.6c5.44-2.56,8.96-8.32,8.96-14.4v-57.376l68.672,68.672
+                                                            c3.136,3.136,7.232,4.704,11.328,4.704s8.192-1.568,11.328-4.672C449.589,437.131,449.589,427.019,443.349,420.747z"/>
+                                                    </>
+                                                :   <>
+                                                        <path d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z"/>
+                                                        <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			"/>
+                                                        <path d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                                                        C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z"/>
+                                                    </>
+                                            }
+                                        </svg>
+                                    </div>
+                                    
+                                    {/* <a className="showcase-link-project" data-type="page-transition" href="project01.html"></a> */}
+                                </SwiperSlide>  : <SwiperSlide></SwiperSlide>}
                             </Swiper>
                             <div className="swiper-pagination"></div>
                         </div>
@@ -509,6 +872,19 @@ class Portfolio extends Component {
                     <button onClick={() => this.changeIndex(10)} className={this.state.index === 10 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/05_cover.jpg" alt="img" /> </button>
                     <button onClick={() => this.changeIndex(11)} className={this.state.index === 11 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/26_cover.jpg" alt="img" /> </button>
                     <button onClick={() => this.changeIndex(12)} className={this.state.index === 12 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/25_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(13)} className={this.state.index === 13 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/27_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(14)} className={this.state.index === 14 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/28_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(15)} className={this.state.index === 15 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/29_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(16)} className={this.state.index === 16 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/30_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(17)} className={this.state.index === 17 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/31_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(18)} className={this.state.index === 18 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/32_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(19)} className={this.state.index === 19 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/33_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(20)} className={this.state.index === 20 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/34_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(21)} className={this.state.index === 21 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/35_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(22)} className={this.state.index === 22 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/36_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(23)} className={this.state.index === 23 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/37_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(24)} className={this.state.index === 24 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/38_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(25)} className={this.state.index === 25 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/39_cover.jpg" alt="img" /> </button>
                 </div>
             </div>
         );

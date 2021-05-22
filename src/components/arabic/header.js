@@ -117,10 +117,10 @@ class ArHeader extends Component {
 
                         <div className="side-footer text-white w-100">
                             <ul className="social-icons-simple">
-                                <li><a href="https://www.facebook.com/crew.sa.18" target="_blank" rel="noreferrer" className="facebook_bg_hvr2"> <i className="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
-                                <li><a href="https://twitter.com/CrewSa2020"  target="_blank" rel="noreferrer" className="twitter_bg_hvr2"> <i className="fab fa-twitter" aria-hidden="true"></i></a> </li>
-                                <li><a href="https://www.youtube.com/channel/UCc3qxfDgNMKnpv_KeiL6mdQ?view_as=subscriber" target="_blank" rel="noreferrer" className="linkdin_bg_hvr2"> <i className="fab fa-youtube" aria-hidden="true"></i></a> </li>
-                                <li><a href="https://www.instagram.com/crewsa2020/?hl=en" target="_blank" rel="noreferrer" className="instagram_bg_hvr2"> <i className="fab fa-instagram" aria-hidden="true"></i></a> </li>
+                                <li><a href="https://www.facebook.com/CREW-105816971619576" target="_blank" rel="noreferrer" className="facebook_bg_hvr2"> <i className="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
+                                <li><a href="https://twitter.com/crew_2030"  target="_blank" rel="noreferrer" className="twitter_bg_hvr2"> <i className="fab fa-twitter" aria-hidden="true"></i></a> </li>
+                                <li><a href="https://www.youtube.com/channel/UCkRWeSLSrfnvG1SK7QAxTzg" target="_blank" rel="noreferrer" className="linkdin_bg_hvr2"> <i className="fab fa-youtube" aria-hidden="true"></i></a> </li>
+                                <li><a href="https://www.instagram.com/crewsa2030" target="_blank" rel="noreferrer" className="instagram_bg_hvr2"> <i className="fab fa-instagram" aria-hidden="true"></i></a> </li>
                             </ul>
                             <p className="whitecolor">كل الحقوق محفوظة &copy; 2021 <a className="web-link text-white" href="http://www.crewsa.net/" target="_blank" rel="noreferrer"> CREW </a></p>
                         </div>
@@ -132,10 +132,10 @@ class ArHeader extends Component {
                 {/* slider social */}
                 <div className="slider-social d-md-block d-none" style={{backgroundColor:"rgba(0, 0, 0, 0.5)", borderRadius: "15px"}}>
                     <ul className="list-unstyled">
-                        <li className="animated-wrap"><a className="animated-element" href="https://www.facebook.com/crew.sa.18" target="_blank" rel="noreferrer"> <i className="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                        <li className="animated-wrap"><a className="animated-element" href="https://twitter.com/CrewSa2020" target="_blank" rel="noreferrer"> <i className="fab fa-twitter" aria-hidden="true"></i></a></li>
-                        <li className="animated-wrap"><a className="animated-element" href="https://www.youtube.com/channel/UCc3qxfDgNMKnpv_KeiL6mdQ?view_as=subscriber"  target="_blank" rel="noreferrer"> <i className="fab fa-youtube" aria-hidden="true"></i></a></li>
-                        <li className="animated-wrap"><a className="animated-element" href="https://www.instagram.com/crewsa2020/?hl=en" target="_blank" rel="noreferrer"> <i className="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li className="animated-wrap"><a className="animated-element" href="https://www.facebook.com/CREW-105816971619576" target="_blank" rel="noreferrer"> <i className="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li className="animated-wrap"><a className="animated-element" href="https://twitter.com/crew_2030" target="_blank" rel="noreferrer"> <i className="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li className="animated-wrap"><a className="animated-element" href="https://www.youtube.com/channel/UCkRWeSLSrfnvG1SK7QAxTzg"  target="_blank" rel="noreferrer"> <i className="fab fa-youtube" aria-hidden="true"></i></a></li>
+                        <li className="animated-wrap"><a className="animated-element" href="https://www.instagram.com/crewsa2030" target="_blank" rel="noreferrer"> <i className="fab fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
 

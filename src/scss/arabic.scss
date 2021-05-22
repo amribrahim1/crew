@@ -10,6 +10,7 @@
         }
         .title {
             width: auto;
+            padding: 0 10px;
             @media only screen and (max-width: 750px) {
                 margin-bottom: 10px;
                 .title-white, .title-yellow {
@@ -37,24 +38,29 @@
             text-align: right;
             line-height: 32px;
             padding: 12px;
+            @media only screen and (min-width: 750px) {
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
         }
         
         // &:hover .title {}
     }
+    .story-caption {
+        left: 10px !important;
+    }
+    /*
     .carousel-story {
         .description {
             background: rgba(0, 0, 0, 0.5);
         }
     }
+    */
     .carousel-light {
         .title-white, .title-yellow {
             // line-height: 24px;
         }
     }
     @media only screen and (max-width: 750px) {
-        .light-caption, .story-caption { 
-            
-        }
         .light-caption {
             .description {
                 font-size: 15px !important;

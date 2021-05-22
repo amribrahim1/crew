@@ -681,7 +681,7 @@ ul {list-style-type: none;}
     vertical-align: top;
     width: auto;
     font-size: 3.5vw;
-    line-height: 90px;
+    line-height: 120px;
 }
 @media only screen and (min-width: 992px) {
     .title {
@@ -1001,9 +1001,13 @@ ul {list-style-type: none;}
 =====================================*/
 .swiper-thumbnails {
     position: absolute;
-    left: 22.4%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     bottom: 10%;
-    transform: translateX(50%);
+    text-align: center;
+    /* transform: translateX(50%); */
 }
 
 .bullet {
@@ -1035,6 +1039,8 @@ ul {list-style-type: none;}
     -o-transform: scale(.95);
     transform: scale(.95);
 }
+
+.swiper-thumbnails .bullet:first-child {margin-left: 0;}
 
 .swiper-thumbnails .bullet.is-active{
     /* background: transparent;
