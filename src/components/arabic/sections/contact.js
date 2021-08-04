@@ -4,7 +4,7 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <img className="d-block w-100 sliderIMG" src={window.innerWidth>window.innerHeight ? "parallax/img/17wf.jpeg" : "parallax/img/17af.jpeg"} alt="Second slide" style={{height: "100vh"}} />
+                <img className="d-block w-100 sliderIMG" src={window.innerWidth>window.innerHeight ? "parallax/img/17w.jpeg" : "parallax/img/17a.jpeg"} alt="Second slide" style={{height: "100vh"}} />
                 <div className={window.innerWidth>window.innerHeight ? "contactDIV" : "contactDIV contactDIVMo"}>
                     <div>يمكنك  <br/> 
                         <span className="contactSpan">التواصل معنا</span> 

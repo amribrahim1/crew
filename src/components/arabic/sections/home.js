@@ -24,21 +24,21 @@ class ArHome extends Component {
         backgrounds: {
             wide: [
                 "parallax/img/18wf.jpeg",
-                "parallax/img/05wf.jpeg",
-                "parallax/img/02wf.jpeg",
-                "parallax/img/12wf.jpeg",
-                "parallax/img/07wf.jpeg",
-                "parallax/img/03wf.jpeg",
-                "parallax/img/08wf.jpeg",
+                "parallax/img/05w.jpeg",
+                "parallax/img/02w.jpeg",
+                "parallax/img/12w.jpeg",
+                "parallax/img/07w.jpeg",
+                "parallax/img/03w.jpeg",
+                "parallax/img/08w.jpeg",
             ],
             high: [
                 "parallax/img/18af.jpeg",
-                "parallax/img/05af.jpeg",
-                "parallax/img/02af.jpeg",
-                "parallax/img/12af.jpeg",
-                "parallax/img/07af.jpeg",
-                "parallax/img/03af.jpeg",
-                "parallax/img/08af.jpeg",
+                "parallax/img/05a.jpeg",
+                "parallax/img/02a.jpeg",
+                "parallax/img/12a.jpeg",
+                "parallax/img/07a.jpeg",
+                "parallax/img/03a.jpeg",
+                "parallax/img/08a.jpeg",
             ]
         }
     }
