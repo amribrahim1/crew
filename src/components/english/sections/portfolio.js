@@ -859,7 +859,7 @@ class Portfolio extends Component {
                     </div>
                 </div>
                 <div className="swiper-thumbnails link">
-                <button onClick={() => this.changeIndex(0)} className={this.state.index === 0 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/11_cover.jpg" alt="img" /> </button>
+                    <button onClick={() => this.changeIndex(0)} className={this.state.index === 0 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/11_cover.jpg" alt="img" /> </button>
                     <button onClick={() => this.changeIndex(1)} className={this.state.index === 1 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/15_cover.jpg" alt="img" /> </button>
                     <button onClick={() => this.changeIndex(2)} className={this.state.index === 2 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/12_cover.jpg" alt="img" /> </button>
                     <button onClick={() => this.changeIndex(3)} className={this.state.index === 3 ? "bullet is-active" : "bullet"}><img src="parallax/img/thumbnails/08_cover.jpg" alt="img" /> </button>
