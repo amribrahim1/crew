@@ -1,7 +1,14 @@
 # Getting Started with Create React App
 
-This project is a React JS version of [http://www.crewsa.net/](http://www.crewsa.net/).<br>
+This project is a portfolio of CREW company: [https://amribrahim1.github.io/crew](https://amribrahim1.github.io/crew).<br>
 was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Node moduled used in the app:
+- [react-bootstrap](https://react-bootstrap.github.io)
+- [fullPage.js](https://alvarotrigo.com/fullPage)
+- [react-gsap](https://greensock.com/react)
+- [react-player](https://github.com/cookpete/react-player)
+- [swiper](https://swiperjs.com)
 
 ## Available Scripts
 
